@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tweetlytics"
+version = "0.1.0"
+description = "Retrieves tweets on a required topic and timeframe using the official twitter API, stores them as a .json and .csv file, performs data cleaning, data analysis and plotting."
+authors = ["DSCI_524_2022_Group8"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
