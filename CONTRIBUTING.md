@@ -3,9 +3,16 @@
 Contributions are welcome, and they are greatly appreciated! Every little bit
 helps, and credit will always be given.
 
+You can contribute in many ways:
+
 ## Types of Contributions
 
+### Workflow
+For this project we will be using the GitHub Flow strategy for collaboration.
+
 ### Report Bugs
+
+Report bugs at https://github.com/UBC-MDS/tweetlytics/issues
 
 If you are reporting a bug, please include:
 
@@ -25,11 +32,14 @@ and "help wanted" is open to whoever wants to implement it.
 
 ### Write Documentation
 
-You can never have enough documentation! Please feel free to contribute to any
-part of the documentation, such as the official docs, docstrings, or even 
-on the web in blog posts, articles, and such.
+tweetlytics could always use more documentation, whether as part of the
+official tweetlytics docs, in docstrings, or even on the web in blog posts,
+articles, and such.
+
 
 ### Submit Feedback
+
+The best way to send feedback is to file an issue at https://github.com/UBC-MDS/tweetlytics/issues
 
 If you are proposing a feature:
 
@@ -57,7 +67,13 @@ Ready to contribute? Here's how to set up `tweetlytics` for local development.
 
 4. When you're done making changes, check that your changes conform to any code formatting requirements and pass any tests.
 
-5. Commit your changes and open a pull request.
+5. Commit your changes and open a pull request through Github website.
+
+    ```console
+    $ git add .
+    $ git commit -m "Your detailed description of your changes."
+    $ git push origin name-of-your-bugfix-or-feature
+    ```
 
 ## Pull Request Guidelines
 
