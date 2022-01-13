@@ -10,7 +10,7 @@ $ pip install tweetlytics
 
 ## Features
 
-The package tweetytics is an EDA package intended to give insight about a topic on Tweeter through some functions. The intention is that a user with little knowledge about data science can quickly call a function to analyze how the topics and trends are on Twitter. Internally, the package uses the official twitter API, stores the data as a .json and .csv file, performs data cleaning, data analysis and plotting.
+The package tweetytics is a package intended to give insight about a topic on Tweeter through some functions. The intention is that a user with little knowledge about data science can quickly call a function to analyze how the topics and trends are on Twitter. Internally, the package uses the official twitter API, stores the data as a .json and .csv file, performs data cleaning, data analysis and plotting.
 
 There are four main functions planned for development and they are outlined below.  Additional functions may be added if time permits.
 
@@ -33,6 +33,7 @@ Taking both the cleaned data frame from the clean() function and the returned di
 ### Note
 
 •As working with the Twitter API requires a personal ‘bearer token’ a user can create their own token and add it as a parameter to the get_store() function.
+
 •The package also include an example .Json and .csv file  based on the keyword ‘omicron’.
 
 ## Dependencies
@@ -58,7 +59,7 @@ IWe welcome and recognize all contributions. You can see a list of current contr
 
 ## License
 
-`tweetlytics` was created by DSCI_524_2022_Group8. It is licensed under the terms of the MIT license.
+`tweetlytics` was created by group of students in UBC MDS program. It is licensed under the terms of the MIT license.
 
 ## Credits
 
