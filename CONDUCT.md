@@ -38,6 +38,20 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
 
 Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
 
+## Health and Safety
+In accordance with health and safety regulations in response to COVID-19, we ask the members of our community to do their utmost in keeping themselves and their peers healthy. This includes (but is not limited to) wearing masks when meeting in person, abiding by the 2m distance rule where possible, staying home if presenting with symptoms, and respecting other people's personal safety precautions.
+
+## Contact
+The project team can be contacted at any of the following:
+
+•	ashojakhani@gmail.com
+
+•	ssjena.89@gmail.com
+
+•	mahmoodnnb@gmail.com 
+
+•	ma.sarafrazi@gmail.com
+
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant homepage](http://contributor-covenant.org/version/1/4), version 1.4.
