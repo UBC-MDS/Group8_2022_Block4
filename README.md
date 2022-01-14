@@ -1,6 +1,6 @@
 # tweetlytics
 
-This package would retrieve tweets on a required topic and time frame, stores them, performs data cleaning, data analysis and plotting.
+This package would retrieve tweets on a required topic and time frame, stores them, performs data cleaning, data analysis, and plotting.
 
 ## Installation
 
