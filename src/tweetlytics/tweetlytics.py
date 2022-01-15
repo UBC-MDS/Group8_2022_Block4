@@ -49,7 +49,7 @@ def get_store():
     """
     Cleans the text in the tweets.
     
-    The cleaning process includes converting into lower case, removal of punctuation and counting the hastags in the tweets
+    The cleaning process includes converting into lower case, removal of punctuation, hastags and hastag counts
     
     Parameters:
     -----------
@@ -59,7 +59,7 @@ def get_store():
     Returns:
     --------
     df_tweets : dataframe
-        A pandas dataframe comprising cleaned tweets and hashtag counts per tweet
+        A pandas dataframe comprising cleaned data in additional columns
     
     Examples
     --------
