@@ -94,9 +94,6 @@ def analytics(df,keyword):
     >>> report = analytics(df,keyword)
     """
 
-import pandas as pd
-import altair as alt
-
 def plot_histo(df, time_def):
     """
     Plotting the number of tweets per hour, throughout 24 hours
@@ -116,17 +113,3 @@ def plot_histo(df, time_def):
     >>> from tweetlytics.tweetlytics import plot_histo
     >>> histo_plot = plot_histo(df,time_def)
     """
-    # Checking for valid inputs
-    if not isinstance(df, pd.DataFrame):
-        raise Exception("The value of the argument 'df' must be type of dataframe.")
-    if type(time_def) != str:
-        raise Exception("The value of the argument 'time_def' must be type of string")
-
-    # extract hour from time column
-    df['hour'] = df['time'].apply(lambda x: x.hour)
-
-    # line histogram plot
-    histo_plot = alt.Chart(df).mark_line().encode(
-        x=alt.X('hour', title="Hour of day"),
-        y=alt.Y('count()', title="Counts of Tweets")).properties(title='Daily tweet count analysis')
-    return histo_plot
