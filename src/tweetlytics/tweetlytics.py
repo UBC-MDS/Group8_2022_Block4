@@ -66,8 +66,6 @@ def get_store():
     >>> clean_tweets("tweets_df.json")
     """
   
-
-  
   def analytics(df,keyword):
     """Analysis the tweets of specific keyword in term of
     average number of retweets, the total number of 
@@ -95,3 +93,40 @@ def get_store():
     >>> from tweetlytics.tweetlytics import analytics
     >>> report = analytics(df,keyword)
     """
+
+import pandas as pd
+import altair as alt
+
+def plot_histo(df, time_def):
+    """
+    Plotting the number of tweets per hour, throughout 24 hours
+    Parameters:
+    -----------
+    df : dataframe
+        pandas dataframe
+    time_def: string
+        The column name of post time in dataframe.
+    Returns:
+    --------
+    histo_plot: chart
+        A histogram line plot plotting the counts of tweets versus hours.
+        
+    Examples
+    --------
+    >>> from tweetlytics.tweetlytics import plot_histo
+    >>> histo_plot = plot_histo(df,time_def)
+    """
+    # Checking for valid inputs
+    if not isinstance(df, pd.DataFrame):
+        raise Exception("The value of the argument 'df' must be type of dataframe.")
+    if type(time_def) != str:
+        raise Exception("The value of the argument 'time_def' must be type of string")
+
+    # extract hour from time column
+    df['hour'] = df['time'].apply(lambda x: x.hour)
+
+    # line histogram plot
+    histo_plot = alt.Chart(df).mark_line().encode(
+        x=alt.X('hour', title="Hour of day"),
+        y=alt.Y('count()', title="Counts of Tweets")).properties(title='Daily tweet count analysis')
+    return histo_plot
