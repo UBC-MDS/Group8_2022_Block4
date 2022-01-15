@@ -45,7 +45,7 @@ def get_store():
     """
     return
 
-  def clean_tweets():
+def clean_tweets():
     """
     Cleans the text in the tweets.
     
@@ -66,7 +66,7 @@ def get_store():
     >>> clean_tweets("tweets_df.json")
     """
   
-  def analytics(df,keyword):
+def analytics(df,keyword):
     """Analysis the tweets of specific keyword in term of
     average number of retweets, the total number of 
     comments, most used hashtags and the average number
