@@ -1,0 +1,4451 @@
+{
+    "data": [
+        {
+            "author_id": "282220986",
+            "conversation_id": "1483227631675797505",
+            "created_at": "2022-01-17T23:59:59.000Z",
+            "id": "1483227631675797505",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 931
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483167691825418241",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @MaximeBernier: Some mainstream media are finally recognizing that the covid hysteria has gone too far and are beginning to question it.\u2026"
+        },
+        {
+            "author_id": "932214247",
+            "conversation_id": "1483227630795165702",
+            "created_at": "2022-01-17T23:59:58.000Z",
+            "id": "1483227630795165702",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 30
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482901087296311300",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Talon Android",
+            "text": "RT @DrJ56013122: I have yet to see a single research article convincingly showing that a booster reduces transmission or reduces the likeli\u2026"
+        },
+        {
+            "author_id": "110971001",
+            "conversation_id": "1483227630052720640",
+            "created_at": "2022-01-17T23:59:58.000Z",
+            "id": "1483227630052720640",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 58
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482902339304390658",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @birb_k: Updated Infection Fatality Rate (IFR) from Dec study Ioannidis, Axfors. Latest data (pre-Omicron), lowers IFR by ~half for seve\u2026"
+        },
+        {
+            "author_id": "22078562",
+            "conversation_id": "1483227629033508866",
+            "created_at": "2022-01-17T23:59:58.000Z",
+            "id": "1483227629033508866",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 11946
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482899763787927553",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @miblogestublog: omicron, waiting for me to leave my house https://t.co/OEH0WqkuoH"
+        },
+        {
+            "author_id": "2374260762",
+            "conversation_id": "1483227626349408259",
+            "created_at": "2022-01-17T23:59:57.000Z",
+            "id": "1483227626349408259",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 288
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483190165413982209",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @LesStonehouse: Disappointed certain ABC journalists suggesting on air that Omicron is \u2018hopefully\u2019 the final phase of the pandemic &amp; als\u2026"
+        },
+        {
+            "author_id": "17662200",
+            "conversation_id": "1483227625405353984",
+            "created_at": "2022-01-17T23:59:57.000Z",
+            "id": "1483227625405353984",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483103440486211588",
+                    "type": "quoted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPad",
+            "text": "Meanwhile, in the United States\u2026 #COVID19 #Omicron https://t.co/6fjyCQEg3T"
+        },
+        {
+            "author_id": "23086574",
+            "conversation_id": "1483227625258565634",
+            "created_at": "2022-01-17T23:59:57.000Z",
+            "id": "1483227625258565634",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 80
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483227010029785088",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @washingtonpost: False negative results have caused frustration and even heartache for some people who later got back positive PCR resul\u2026"
+        },
+        {
+            "author_id": "18658713",
+            "conversation_id": "1483227624361316352",
+            "created_at": "2022-01-17T23:59:57.000Z",
+            "id": "1483227624361316352",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 9698
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483044009505439745",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @BAshbyMD: Omicron exacerbates chronic illnesses such as CVD, CKD, COPD, cancer etc. In cardiology, we have seen increased heart attacks\u2026"
+        },
+        {
+            "author_id": "21858124",
+            "conversation_id": "1483227624252055552",
+            "created_at": "2022-01-17T23:59:57.000Z",
+            "id": "1483227624252055552",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 333
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483198811547869185",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @tomaspueyo: This is the end of the pandemic:\n\u2022 Vaccines reduce deaths by 90%\n\u2022 Omicron kills 90% less\n\u2022 Treatments save 90% of ppl\n\nThe\u2026"
+        },
+        {
+            "author_id": "36860872",
+            "conversation_id": "1483227622309908480",
+            "created_at": "2022-01-17T23:59:56.000Z",
+            "id": "1483227622309908480",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 55
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483226660170354688",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @DeadlineWH: \"What would've happened if we had gone through Omicron and we did not have 63% of the country fully vaccinated? The resilie\u2026"
+        },
+        {
+            "author_id": "1467279803979943936",
+            "conversation_id": "1483227614638907392",
+            "created_at": "2022-01-17T23:59:55.000Z",
+            "id": "1483227614638907392",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 385
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483183551701217281",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @bec7ford: Hunt : the peak has passed! *implied - Omicron wave is over* \n\nNorman Swan : it\u2019s very wrong to assume that the peak has occu\u2026"
+        },
+        {
+            "author_id": "1446741670960058370",
+            "conversation_id": "1483227614605373440",
+            "created_at": "2022-01-17T23:59:55.000Z",
+            "id": "1483227614605373440",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 4371
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483127719714074627",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @DrEliDavid: Israel \ud83c\uddee\ud83c\uddf1 study: \"4th booster not effective for Omicron\"\n\nProbably a 5th booster is needed \ud83e\udd21 https://t.co/T3QQXLBAMo"
+        },
+        {
+            "author_id": "1160369664871948288",
+            "conversation_id": "1483226202743906306",
+            "created_at": "2022-01-17T23:59:54.000Z",
+            "id": "1483227614408241152",
+            "in_reply_to_user_id": "22605803",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 16,
+                "quote_count": 0,
+                "reply_count": 3,
+                "retweet_count": 3
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483226202743906306",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "@nealejones Watching the MIQ system filling up with Omicron is like watching a dam filling up and it's lapping the top you just waiting for it to overflow I think 2 weeks tops imo, we should have slowed arrival's down week's ago."
+        },
+        {
+            "author_id": "42154919",
+            "conversation_id": "1483227613405589507",
+            "created_at": "2022-01-17T23:59:54.000Z",
+            "id": "1483227613405589507",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 19
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483211396686954497",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @acoyne: For one thing, if it was Canada Post it would still be in transit.\n\nCanadian mail likely not source of Beijing Omicron: experts\u2026"
+        },
+        {
+            "author_id": "15396053",
+            "conversation_id": "1483149769350389763",
+            "created_at": "2022-01-17T23:59:54.000Z",
+            "id": "1483227612570812416",
+            "in_reply_to_user_id": "928019185",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 1,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483218856004898818",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "@oldcityguardian @TheCityofSac I appreciate that very much. Really am focused on the near-term economics facing folks during omicron spike."
+        },
+        {
+            "author_id": "1699185475",
+            "conversation_id": "1483227611765833730",
+            "created_at": "2022-01-17T23:59:54.000Z",
+            "id": "1483227611765833730",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1291
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483210367979626497",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @TracyWesterman: I think when you have 58 COVID deaths in one day across just 2 states, the \u201cOmicron is mild\u201d argument is pretty well do\u2026"
+        },
+        {
+            "author_id": "1260140617046175746",
+            "conversation_id": "1483178971881562112",
+            "created_at": "2022-01-17T23:59:54.000Z",
+            "id": "1483227611434483713",
+            "in_reply_to_user_id": "3014101080",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 1,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483212045902544896",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "@PlayedByGames @samturner892 @NewshubNZ For most people the risk of all those things is tiny. Unfortunately there are some whose risk from Omicron is a lot higher than the avg person. We need to stop treating people as if they all largely have the same risk profile."
+        },
+        {
+            "author_id": "1715434532",
+            "conversation_id": "1483227608632668160",
+            "created_at": "2022-01-17T23:59:53.000Z",
+            "id": "1483227608632668160",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "Beijing locks down office with workers still inside after single Omicron case detected\n\nhttps://t.co/YUHtDadQoS"
+        },
+        {
+            "author_id": "203987842",
+            "conversation_id": "1483227607764066304",
+            "created_at": "2022-01-17T23:59:53.000Z",
+            "id": "1483227607764066304",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 9698
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483044009505439745",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @BAshbyMD: Omicron exacerbates chronic illnesses such as CVD, CKD, COPD, cancer etc. In cardiology, we have seen increased heart attacks\u2026"
+        },
+        {
+            "author_id": "1440538267607134211",
+            "conversation_id": "1483227607214989312",
+            "created_at": "2022-01-17T23:59:53.000Z",
+            "id": "1483227607214989312",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1586
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483124884653760513",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @HGAQuentin: Omicron is everywhere.  It\u2019s time for @JustinTrudeau and the @liberal_party government to drop travel testing and border no\u2026"
+        },
+        {
+            "author_id": "1347760701520146440",
+            "conversation_id": "1483227605683904516",
+            "created_at": "2022-01-17T23:59:52.000Z",
+            "id": "1483227605683904516",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 338
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482923444291489793",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @2legit1970: They\u2019re going to blame the supply chain issues on Covid now, then when all the unvaccinated people go back to work because\u2026"
+        },
+        {
+            "author_id": "257276137",
+            "conversation_id": "1483227604975230980",
+            "created_at": "2022-01-17T23:59:52.000Z",
+            "id": "1483227604975230980",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1291
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483210367979626497",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @TracyWesterman: I think when you have 58 COVID deaths in one day across just 2 states, the \u201cOmicron is mild\u201d argument is pretty well do\u2026"
+        },
+        {
+            "author_id": "1399846174438350849",
+            "conversation_id": "1483227602018086914",
+            "created_at": "2022-01-17T23:59:52.000Z",
+            "id": "1483227602018086914",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 839
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483147998259466241",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @WHO: Every variant of the #COVID19 virus, including Omicron, is dangerous and can cause:\n-severe disease\n-death\n-further virus mutation\u2026"
+        },
+        {
+            "author_id": "1531185990",
+            "conversation_id": "1483227597807177728",
+            "created_at": "2022-01-17T23:59:51.000Z",
+            "id": "1483227597807177728",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1249
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483171819767177225",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @TheInsiderPaper: JUST IN \ud83d\udea8 Israeli trial, world\u2019s first, finds 4th dose \u2018not good enough\u2019 against Omicron - Times of Israel"
+        },
+        {
+            "author_id": "1317675775",
+            "conversation_id": "1483227593310900227",
+            "created_at": "2022-01-17T23:59:49.000Z",
+            "id": "1483227593310900227",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1291
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483210367979626497",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @TracyWesterman: I think when you have 58 COVID deaths in one day across just 2 states, the \u201cOmicron is mild\u201d argument is pretty well do\u2026"
+        },
+        {
+            "author_id": "1230592110006542337",
+            "conversation_id": "1483194431754932226",
+            "created_at": "2022-01-17T23:59:49.000Z",
+            "id": "1483227592132022272",
+            "in_reply_to_user_id": "1265085149949169664",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 1,
+                "quote_count": 0,
+                "reply_count": 3,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483217429610258432",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "@OneWonby @ABC Thanks for the irrelevant info. Doesn't change this fact\nhttps://t.co/Ln0U2Oqy15"
+        },
+        {
+            "author_id": "2579262878",
+            "conversation_id": "1483227589867028482",
+            "created_at": "2022-01-17T23:59:49.000Z",
+            "id": "1483227589867028482",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 11946
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482899763787927553",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @miblogestublog: omicron, waiting for me to leave my house https://t.co/OEH0WqkuoH"
+        },
+        {
+            "author_id": "1327666400",
+            "conversation_id": "1483227586935214082",
+            "created_at": "2022-01-17T23:59:48.000Z",
+            "id": "1483227586935214082",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1586
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483124884653760513",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @HGAQuentin: Omicron is everywhere.  It\u2019s time for @JustinTrudeau and the @liberal_party government to drop travel testing and border no\u2026"
+        },
+        {
+            "author_id": "175238215",
+            "conversation_id": "1483227584297304064",
+            "created_at": "2022-01-17T23:59:47.000Z",
+            "id": "1483227584297304064",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 196
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483180891556163584",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @LimespringsB: I urge everyone to watch @normanswan on ABC Breakfast today where he dispels a lot of Covid myths.\n\n* info on effective m\u2026"
+        },
+        {
+            "author_id": "1405210926572212226",
+            "conversation_id": "1483227578290823170",
+            "created_at": "2022-01-17T23:59:46.000Z",
+            "id": "1483227578290823170",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 140
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483122458332909568",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @willieodeaLIVE: I have urged the Taoiseach and Min for Health to remove all Covid restrictions, as with the Omicron variant there is no\u2026"
+        },
+        {
+            "author_id": "850124612549705728",
+            "conversation_id": "1483227578274140160",
+            "created_at": "2022-01-17T23:59:46.000Z",
+            "id": "1483227578274140160",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 80
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483227010029785088",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @washingtonpost: False negative results have caused frustration and even heartache for some people who later got back positive PCR resul\u2026"
+        },
+        {
+            "author_id": "1260291453973983232",
+            "conversation_id": "1483227578022387720",
+            "created_at": "2022-01-17T23:59:46.000Z",
+            "id": "1483227578022387720",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 109
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483172199741722626",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @jeffreyatucker: \"Audiences are vanishing.\" Wonder why? Vaccine mandates, mandatory masks, no food or drinks. The war on art continues.\u2026"
+        },
+        {
+            "author_id": "1445751022526160908",
+            "conversation_id": "1483227576680075265",
+            "created_at": "2022-01-17T23:59:45.000Z",
+            "id": "1483227576680075265",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 919
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483139619105480707",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @Taka_tut: September 2021: because of myocarditis JCVI couldn\u2019t recommend even 1st dose for 12-15 y.o. Overruled by vested political and\u2026"
+        },
+        {
+            "author_id": "2154587513",
+            "conversation_id": "1483227574365044743",
+            "created_at": "2022-01-17T23:59:45.000Z",
+            "id": "1483227574365044743",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 4371
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483127719714074627",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @DrEliDavid: Israel \ud83c\uddee\ud83c\uddf1 study: \"4th booster not effective for Omicron\"\n\nProbably a 5th booster is needed \ud83e\udd21 https://t.co/T3QQXLBAMo"
+        },
+        {
+            "author_id": "716387836618878977",
+            "conversation_id": "1483227573245075459",
+            "created_at": "2022-01-17T23:59:45.000Z",
+            "id": "1483227573245075459",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 11946
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482899763787927553",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @miblogestublog: omicron, waiting for me to leave my house https://t.co/OEH0WqkuoH"
+        },
+        {
+            "author_id": "1428156038750953473",
+            "conversation_id": "1483144738370895878",
+            "created_at": "2022-01-17T23:59:44.000Z",
+            "id": "1483227571865079811",
+            "in_reply_to_user_id": "247174365",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483144738370895878",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "@LinaHidalgoTX True evil of Linda!\nhttps://t.co/CuFxqFzgJX"
+        },
+        {
+            "author_id": "1715434532",
+            "conversation_id": "1483227570527424517",
+            "created_at": "2022-01-17T23:59:44.000Z",
+            "id": "1483227570527424517",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "Reporter shows quarantined buildings in China ahead of Olympics\n\nhttps://t.co/mLiaHkpQlD"
+        },
+        {
+            "author_id": "103399912",
+            "conversation_id": "1483227569226928139",
+            "created_at": "2022-01-17T23:59:44.000Z",
+            "id": "1483227569226928139",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 27
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483179718165905412",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @RushCam: However \u2018mild\u2019 the Omicron is, so many places/service providers are closed or experiencing delays because everybody\u2019s OOO."
+        },
+        {
+            "author_id": "770879618",
+            "conversation_id": "1483227568316760065",
+            "created_at": "2022-01-17T23:59:43.000Z",
+            "id": "1483227568316760065",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 25632
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482453882542379010",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @roddreher: Day 6 of Covid. Now my wife and kids have it too. All of us vaxxed; wife and I both boosted not long ago. Everybody we know\u2026"
+        },
+        {
+            "author_id": "31184259",
+            "conversation_id": "1483227567788376065",
+            "created_at": "2022-01-17T23:59:43.000Z",
+            "id": "1483227567788376065",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 186
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483176003455393797",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @mercola: Tragic. \u201cA fourth shot of COVID-19 vaccine boosts antibodies to even higher levels than the third jab but it is not enough to\u2026"
+        },
+        {
+            "author_id": "1355698353569325056",
+            "conversation_id": "1483227567742386178",
+            "created_at": "2022-01-17T23:59:43.000Z",
+            "id": "1483227567742386178",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 184
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483205900433338368",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @JonesHowdareyou: It remains my opinion that opening up for fkn xmas given Omicron had arrived was a very big fkn mistake. \n\nAnd I blame\u2026"
+        },
+        {
+            "author_id": "114084421",
+            "conversation_id": "1483227567398465539",
+            "created_at": "2022-01-17T23:59:43.000Z",
+            "id": "1483227567398465539",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 80
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483227010029785088",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @washingtonpost: False negative results have caused frustration and even heartache for some people who later got back positive PCR resul\u2026"
+        },
+        {
+            "author_id": "1371356077862780930",
+            "conversation_id": "1483227562356916225",
+            "created_at": "2022-01-17T23:59:42.000Z",
+            "id": "1483227562356916225",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 10
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483206225504669696",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @MyCovidAu: I'm not celebrating any peak or plateau of Omicron. I'm mourning every death whether they occur on the way up or the way dow\u2026"
+        },
+        {
+            "author_id": "1280846169850036224",
+            "conversation_id": "1483227559563509760",
+            "created_at": "2022-01-17T23:59:41.000Z",
+            "id": "1483227559563509760",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1524
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482742961490350089",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @Adam_Creighton: New published Covid19 survival rates (2020 data, 14 countries)\nAge          (%)\n0-19         99.9987\n20-29      99.9912\u2026"
+        },
+        {
+            "author_id": "799858635677405184",
+            "conversation_id": "1483227558577840129",
+            "created_at": "2022-01-17T23:59:41.000Z",
+            "id": "1483227558577840129",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "Given Bloomfield has publicly admitted that the waxx is pretty much useless against Omicron, surely this \u201cstrengthening or adjustment\u201d of the traffic light system won\u2019t include booster mandates or more restrictions on the unwaxxed? \ud83e\udd21\ud83e\udd2a\ud83e\udd23\nhttps://t.co/AiWuo1wL6y"
+        },
+        {
+            "author_id": "1260310244",
+            "conversation_id": "1483227556971225093",
+            "created_at": "2022-01-17T23:59:41.000Z",
+            "id": "1483227556971225093",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 47
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483213288620146693",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @IamJadehawk: assorted governments: no, it's fine, we totally can safely shorten quarantine period\nomicron: WELL ACTUALLY"
+        },
+        {
+            "author_id": "53204949",
+            "conversation_id": "1483227556157480960",
+            "created_at": "2022-01-17T23:59:41.000Z",
+            "id": "1483227556157480960",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 11946
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482899763787927553",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @miblogestublog: omicron, waiting for me to leave my house https://t.co/OEH0WqkuoH"
+        },
+        {
+            "author_id": "888127055619018754",
+            "conversation_id": "1483227554760695810",
+            "created_at": "2022-01-17T23:59:40.000Z",
+            "id": "1483227554760695810",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483124884653760513",
+                    "type": "quoted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "But but China with a billion + announcement today 1 omicron person inflicted!  \ud83e\udd23\ud83e\udd23 https://t.co/WXgqi7IXpj"
+        },
+        {
+            "author_id": "2364599179",
+            "conversation_id": "1483227554106519558",
+            "created_at": "2022-01-17T23:59:40.000Z",
+            "id": "1483227554106519558",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 11946
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482899763787927553",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @miblogestublog: omicron, waiting for me to leave my house https://t.co/OEH0WqkuoH"
+        },
+        {
+            "author_id": "1323900405227511808",
+            "conversation_id": "1483227548553453579",
+            "created_at": "2022-01-17T23:59:39.000Z",
+            "id": "1483227548553453579",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 11
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483222550125899779",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @Fran48548306: @Milliganreports 4 people died as a result of the pink batts scheme and there were royal commissions. Why does the LNP ge\u2026"
+        },
+        {
+            "author_id": "410103064",
+            "conversation_id": "1483227547202637825",
+            "created_at": "2022-01-17T23:59:38.000Z",
+            "id": "1483227547202637825",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 900
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482087905820618759",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @AP: The omicron variant is sickening so many sanitation workers around the U.S. that some cities have had to delay or suspend garbage a\u2026"
+        },
+        {
+            "author_id": "1027554979555536897",
+            "conversation_id": "1483201512721453057",
+            "created_at": "2022-01-17T23:59:38.000Z",
+            "id": "1483227546288369667",
+            "in_reply_to_user_id": "4787411118",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 3,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483201512721453057",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "@BryanDeanWright @BubbleCovfefe Meanwhile the unvaxxed are fighting off omicron with zero doses from pfizer... joe's probably pissed he couldn't deliver on his promise of serious illness and death to the unvaxxed this \"dark winter\"..."
+        },
+        {
+            "author_id": "15122683",
+            "conversation_id": "1483227545428324352",
+            "created_at": "2022-01-17T23:59:38.000Z",
+            "id": "1483227545428324352",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 68204
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1481284543894241284",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @WendyACronin: \"Omicron's mild. Let it rip.\" One month later: \"Why isn't my trash getting picked up? Where's the produce at the grocery\u2026"
+        },
+        {
+            "author_id": "58496285",
+            "conversation_id": "1483227545130655746",
+            "created_at": "2022-01-17T23:59:38.000Z",
+            "id": "1483227545130655746",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 338
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483144795879092224",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @statsjamie: \ud83d\udea8\ud83d\udea8 Doctors and scientists urge caution in giving Covid jabs to 'low risk' children\n\n\u27a1\ufe0f More than thirty doctors, scientists\u2026"
+        },
+        {
+            "author_id": "14107564",
+            "conversation_id": "1483227543599730688",
+            "created_at": "2022-01-17T23:59:38.000Z",
+            "id": "1483227543599730688",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 640
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483179403584499712",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @MichaelPSenger: A fourth dose of the Pfizer vaccine is insufficient to ward off Omicron, Israeli trial finds.\nhttps://t.co/mHtHkvKZdE"
+        },
+        {
+            "author_id": "1428156038750953473",
+            "conversation_id": "1483140743082516481",
+            "created_at": "2022-01-17T23:59:37.000Z",
+            "id": "1483227542844674049",
+            "in_reply_to_user_id": "1093245238917955588",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483140743082516481",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "@HarrisCoJudge @LinaHidalgoTX True evil of Linda!\nhttps://t.co/CuFxqFzgJX"
+        },
+        {
+            "author_id": "560707426",
+            "conversation_id": "1483227540642619393",
+            "created_at": "2022-01-17T23:59:37.000Z",
+            "id": "1483227540642619393",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 18
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483107386558615557",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @prairiecentrist: Canada should just pull out of the Olympics. \n\nChina is dangerous for Canadians. They lie about everything. They can\u2019t\u2026"
+        },
+        {
+            "author_id": "1449186361752293378",
+            "conversation_id": "1483227540173041666",
+            "created_at": "2022-01-17T23:59:37.000Z",
+            "id": "1483227540173041666",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "https://t.co/mCYD3Xkdzf\nGood for them probably realizing the lies with this whole covid bullshit it's the flu period"
+        },
+        {
+            "author_id": "869953126551482368",
+            "conversation_id": "1483227539724279811",
+            "created_at": "2022-01-17T23:59:37.000Z",
+            "id": "1483227539724279811",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 919
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483139619105480707",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPad",
+            "text": "RT @Taka_tut: September 2021: because of myocarditis JCVI couldn\u2019t recommend even 1st dose for 12-15 y.o. Overruled by vested political and\u2026"
+        },
+        {
+            "author_id": "260286890",
+            "conversation_id": "1483227537132204033",
+            "created_at": "2022-01-17T23:59:36.000Z",
+            "id": "1483227537132204033",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 41
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483157253926670339",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @adamjohnsonNYC: \u201cBut the recommendation [to cut the recommended isolation period from 10 to 5 days] had an important advantage: It coul\u2026"
+        },
+        {
+            "author_id": "2878063612",
+            "conversation_id": "1483216346674565125",
+            "created_at": "2022-01-17T23:59:36.000Z",
+            "id": "1483227536763105286",
+            "in_reply_to_user_id": "1602930967",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483226560266125317",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "@brainzandbrainz @fox5dc That's silly talk. Of course I will not blame students or faculty.  Fauci has already said we are all going to get Omicron. I have gotten vaxxed and boosted. \n\nhttps://t.co/CCGrtDCCgx"
+        },
+        {
+            "author_id": "1455957107161935873",
+            "conversation_id": "1483227535261388801",
+            "created_at": "2022-01-17T23:59:36.000Z",
+            "id": "1483227535261388801",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "To think if omicron pass away is going to make African-Americans feel better about not receiving #VotingRoghts is not true No Sir omicron is your issue. Attempting to get the same rights as you and others is issue ours."
+        },
+        {
+            "author_id": "941843147763490817",
+            "conversation_id": "1483227534397513729",
+            "created_at": "2022-01-17T23:59:35.000Z",
+            "id": "1483227534397513729",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 9698
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483044009505439745",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @BAshbyMD: Omicron exacerbates chronic illnesses such as CVD, CKD, COPD, cancer etc. In cardiology, we have seen increased heart attacks\u2026"
+        },
+        {
+            "author_id": "508214074",
+            "conversation_id": "1483227527380275201",
+            "created_at": "2022-01-17T23:59:34.000Z",
+            "id": "1483227527380275201",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 436
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483203236639256582",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @GordonGChang: #China is suggesting that a package or envelope from #Canada is the source of an #Omicron infection in #Beijing and is ur\u2026"
+        },
+        {
+            "author_id": "1613205524",
+            "conversation_id": "1483227526793203713",
+            "created_at": "2022-01-17T23:59:34.000Z",
+            "id": "1483227526793203713",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 85
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482862342484418561",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @methanoJen: \u26a0\ufe0fPeople are most contagious with omicron 3-6 days after symptoms start.\n\n\ud83d\udce3People aren\u2019t contagious after 10 days.\n\nhttps:/\u2026"
+        },
+        {
+            "author_id": "298487238",
+            "conversation_id": "1483227525585465347",
+            "created_at": "2022-01-17T23:59:33.000Z",
+            "id": "1483227525585465347",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 2588
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483130330060103682",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @FaheemYounus: Omicron is not mild; it *milder* than delta. \n\nUnderstand the difference."
+        },
+        {
+            "author_id": "1460586413548728322",
+            "conversation_id": "1483227519818297345",
+            "created_at": "2022-01-17T23:59:32.000Z",
+            "id": "1483227519818297345",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 184
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483205900433338368",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @JonesHowdareyou: It remains my opinion that opening up for fkn xmas given Omicron had arrived was a very big fkn mistake. \n\nAnd I blame\u2026"
+        },
+        {
+            "author_id": "2419485350",
+            "conversation_id": "1483227519419822082",
+            "created_at": "2022-01-17T23:59:32.000Z",
+            "id": "1483227519419822082",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1291
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483210367979626497",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @TracyWesterman: I think when you have 58 COVID deaths in one day across just 2 states, the \u201cOmicron is mild\u201d argument is pretty well do\u2026"
+        },
+        {
+            "author_id": "165387035",
+            "conversation_id": "1483227519100850178",
+            "created_at": "2022-01-17T23:59:32.000Z",
+            "id": "1483227519100850178",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 919
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483139619105480707",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @Taka_tut: September 2021: because of myocarditis JCVI couldn\u2019t recommend even 1st dose for 12-15 y.o. Overruled by vested political and\u2026"
+        },
+        {
+            "author_id": "763328952429600768",
+            "conversation_id": "1483227517259501572",
+            "created_at": "2022-01-17T23:59:31.000Z",
+            "id": "1483227517259501572",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 919
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483139619105480707",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @Taka_tut: September 2021: because of myocarditis JCVI couldn\u2019t recommend even 1st dose for 12-15 y.o. Overruled by vested political and\u2026"
+        },
+        {
+            "author_id": "1411882185859104769",
+            "conversation_id": "1483227516831600640",
+            "created_at": "2022-01-17T23:59:31.000Z",
+            "id": "1483227516831600640",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1586
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483124884653760513",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @HGAQuentin: Omicron is everywhere.  It\u2019s time for @JustinTrudeau and the @liberal_party government to drop travel testing and border no\u2026"
+        },
+        {
+            "author_id": "1173304229034942465",
+            "conversation_id": "1483227515221016580",
+            "created_at": "2022-01-17T23:59:31.000Z",
+            "id": "1483227515221016580",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 4371
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483127719714074627",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @DrEliDavid: Israel \ud83c\uddee\ud83c\uddf1 study: \"4th booster not effective for Omicron\"\n\nProbably a 5th booster is needed \ud83e\udd21 https://t.co/T3QQXLBAMo"
+        },
+        {
+            "author_id": "636754581",
+            "conversation_id": "1483227512390012928",
+            "created_at": "2022-01-17T23:59:30.000Z",
+            "id": "1483227512390012928",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483218537128812546",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @CubbyPau: imagine planning an entire concert tour in the middle of this Omicron surge and thinking that's a good idea...\n\nI just don't\u2026"
+        },
+        {
+            "author_id": "1057276233870913537",
+            "conversation_id": "1483227511760715777",
+            "created_at": "2022-01-17T23:59:30.000Z",
+            "id": "1483227511760715777",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 9698
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483044009505439745",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @BAshbyMD: Omicron exacerbates chronic illnesses such as CVD, CKD, COPD, cancer etc. In cardiology, we have seen increased heart attacks\u2026"
+        },
+        {
+            "author_id": "549330655",
+            "conversation_id": "1483227509722431491",
+            "created_at": "2022-01-17T23:59:30.000Z",
+            "id": "1483227509722431491",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 640
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483179403584499712",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @MichaelPSenger: A fourth dose of the Pfizer vaccine is insufficient to ward off Omicron, Israeli trial finds.\nhttps://t.co/mHtHkvKZdE"
+        },
+        {
+            "author_id": "183024552",
+            "conversation_id": "1483190165413982209",
+            "created_at": "2022-01-17T23:59:29.000Z",
+            "id": "1483227509600976896",
+            "in_reply_to_user_id": "1108565574",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 2,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483190165413982209",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "@LesStonehouse Also seen reports of people who've had Omicron getting reinfected. It's no guarantee."
+        },
+        {
+            "author_id": "1114973713013850113",
+            "conversation_id": "1483227505893036038",
+            "created_at": "2022-01-17T23:59:29.000Z",
+            "id": "1483227505893036038",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 2588
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483130330060103682",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @FaheemYounus: Omicron is not mild; it *milder* than delta. \n\nUnderstand the difference."
+        },
+        {
+            "author_id": "939431298233376768",
+            "conversation_id": "1483227504077045761",
+            "created_at": "2022-01-17T23:59:28.000Z",
+            "id": "1483227504077045761",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 58
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482902339304390658",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @birb_k: Updated Infection Fatality Rate (IFR) from Dec study Ioannidis, Axfors. Latest data (pre-Omicron), lowers IFR by ~half for seve\u2026"
+        },
+        {
+            "author_id": "115068099",
+            "conversation_id": "1483227502634221569",
+            "created_at": "2022-01-17T23:59:28.000Z",
+            "id": "1483227502634221569",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "Booster mix proves useful for Omicron https://t.co/P9fEo6AzWc"
+        },
+        {
+            "author_id": "1371356077862780930",
+            "conversation_id": "1483227495113830400",
+            "created_at": "2022-01-17T23:59:26.000Z",
+            "id": "1483227495113830400",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 385
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483183551701217281",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @bec7ford: Hunt : the peak has passed! *implied - Omicron wave is over* \n\nNorman Swan : it\u2019s very wrong to assume that the peak has occu\u2026"
+        },
+        {
+            "author_id": "1143321802313207808",
+            "conversation_id": "1483227492550950913",
+            "created_at": "2022-01-17T23:59:25.000Z",
+            "id": "1483227492550950913",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 2890
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482412374418206726",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @bmj_latest: Patients with the omicron variant of covid-19 shed virus for longer after symptoms emerge, show data from Japan, potentiall\u2026"
+        },
+        {
+            "author_id": "1425139212",
+            "conversation_id": "1482968839805890560",
+            "created_at": "2022-01-17T23:59:25.000Z",
+            "id": "1483227491510943744",
+            "in_reply_to_user_id": "256833444",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482968839805890560",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "@AnnastaciaMP @ashbarty @AustralianOpen How was the Magic Millions.   I thought we were all to stay home for 6 weeks due to Omicron.  Or is that only the peasantry"
+        },
+        {
+            "author_id": "1471322095695155205",
+            "conversation_id": "1483227490848026625",
+            "created_at": "2022-01-17T23:59:25.000Z",
+            "id": "1483227490848026625",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 9
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483223817065582603",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "RT @danielkotzin: \u201cThe bottom line is that the vaccine is excellent against Alpha and Delta, for Omicron it\u2019s not good enough.\u201d\nhttps://t.c\u2026"
+        },
+        {
+            "author_id": "293129655",
+            "conversation_id": "1483227489857982468",
+            "created_at": "2022-01-17T23:59:25.000Z",
+            "id": "1483227489857982468",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1586
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483124884653760513",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @HGAQuentin: Omicron is everywhere.  It\u2019s time for @JustinTrudeau and the @liberal_party government to drop travel testing and border no\u2026"
+        },
+        {
+            "author_id": "2167828236",
+            "conversation_id": "1483227488524423171",
+            "created_at": "2022-01-17T23:59:24.000Z",
+            "id": "1483227488524423171",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 9698
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483044009505439745",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @BAshbyMD: Omicron exacerbates chronic illnesses such as CVD, CKD, COPD, cancer etc. In cardiology, we have seen increased heart attacks\u2026"
+        },
+        {
+            "author_id": "1307355834314231811",
+            "conversation_id": "1483227486943322116",
+            "created_at": "2022-01-17T23:59:24.000Z",
+            "id": "1483227486943322116",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 82
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483161576534335490",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @Adam_Creighton: Israeli study shows 4th shot of COVID-19 vaccine less effective on Omicron.\nThe prospect of compulsory six-monthly boos\u2026"
+        },
+        {
+            "author_id": "3082546368",
+            "conversation_id": "1483227484321730563",
+            "created_at": "2022-01-17T23:59:23.000Z",
+            "id": "1483227484321730563",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 2
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483226462500966402",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @Robert33829889: There are people out in the World who would die if they were to get sick from having contracting Covid-19. Do we not ca\u2026"
+        },
+        {
+            "author_id": "922883743769018368",
+            "conversation_id": "1483098045809979393",
+            "created_at": "2022-01-17T23:59:23.000Z",
+            "id": "1483227483910844416",
+            "in_reply_to_user_id": "12716032",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483098045809979393",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "@sonaliranade Madam,\nAny prediction on Punjab election? Btw, why are they having election in the midst of omicron? Didn\u2019t EC learn from 2nd wave after WB polls?"
+        },
+        {
+            "author_id": "1428156038750953473",
+            "conversation_id": "1481344865942265860",
+            "created_at": "2022-01-17T23:59:23.000Z",
+            "id": "1483227483138895879",
+            "in_reply_to_user_id": "1442548149151666188",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1481344865942265860",
+                    "type": "replied_to"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter Web App",
+            "text": "@JDBalartMSNBC @LinaHidalgoTX @jdbalart @MSNBC True evil of Linda!\nhttps://t.co/CuFxqFhFSp"
+        },
+        {
+            "author_id": "1477961171449917441",
+            "conversation_id": "1483227482664824833",
+            "created_at": "2022-01-17T23:59:23.000Z",
+            "id": "1483227482664824833",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1586
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483124884653760513",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @HGAQuentin: Omicron is everywhere.  It\u2019s time for @JustinTrudeau and the @liberal_party government to drop travel testing and border no\u2026"
+        },
+        {
+            "author_id": "1400194352224350211",
+            "conversation_id": "1483227475656290314",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227475656290314",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 929
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483112070581207051",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @kylamb8: In England, surveillance of Omicron found just 75 deaths among 212,019 confirmed cases. That's a 0.03% case fatality rate and\u2026"
+        },
+        {
+            "author_id": "1376421247437795329",
+            "conversation_id": "1483227474779869184",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227474779869184",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 1291
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483210367979626497",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @TracyWesterman: I think when you have 58 COVID deaths in one day across just 2 states, the \u201cOmicron is mild\u201d argument is pretty well do\u2026"
+        },
+        {
+            "author_id": "230244271",
+            "conversation_id": "1483227474653859842",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227474653859842",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 2541
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482978802208849924",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @OccupyDemocrats: BREAKING NEWS: France\u2019s parliament approves a new law that will ban the unvaccinated from all restaurants, sports aren\u2026"
+        },
+        {
+            "author_id": "111309713",
+            "conversation_id": "1483227474481795077",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227474481795077",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 9
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483223817065582603",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "TweetDeck",
+            "text": "RT @danielkotzin: \u201cThe bottom line is that the vaccine is excellent against Alpha and Delta, for Omicron it\u2019s not good enough.\u201d\nhttps://t.c\u2026"
+        },
+        {
+            "author_id": "16337088",
+            "conversation_id": "1483227473571504134",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227473571504134",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 19,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 7
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483223887416422400",
+                    "type": "quoted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "I had a chat this week with @duncankinney at @ProgressAlberta about Omicron, schools, and what happens when small communities get overwhelmed with misinformation. https://t.co/iQ4mGFQy5d"
+        },
+        {
+            "author_id": "759773314986438656",
+            "conversation_id": "1483227472699269123",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227472699269123",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 0
+            },
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "Omicron in the vaxxed/boostered crowd doesn't look like COVID. It looks like strep, or the *stomach flu*, or a weird headache with congestion. If you can't get tested, please do NOT misrepresent your symptoms and make an appt. We can't test you either. NOW, AGAIN we're exposed."
+        },
+        {
+            "author_id": "14731789",
+            "conversation_id": "1483227472548311048",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227472548311048",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 58
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1482902339304390658",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Tweetbot for i\u039fS",
+            "text": "RT @birb_k: Updated Infection Fatality Rate (IFR) from Dec study Ioannidis, Axfors. Latest data (pre-Omicron), lowers IFR by ~half for seve\u2026"
+        },
+        {
+            "author_id": "1513548752",
+            "conversation_id": "1483227472082927616",
+            "created_at": "2022-01-17T23:59:21.000Z",
+            "id": "1483227472082927616",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 90
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483223814746091523",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for Android",
+            "text": "RT @Nature: The world\u2019s most widely used COVID-19 vaccines provide little to no protection against infection with the Omicron variant, labo\u2026"
+        },
+        {
+            "author_id": "156147230",
+            "conversation_id": "1483227471273082880",
+            "created_at": "2022-01-17T23:59:20.000Z",
+            "id": "1483227471273082880",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 436
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483203236639256582",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPad",
+            "text": "RT @GordonGChang: #China is suggesting that a package or envelope from #Canada is the source of an #Omicron infection in #Beijing and is ur\u2026"
+        },
+        {
+            "author_id": "2355222696",
+            "conversation_id": "1483227467489980418",
+            "created_at": "2022-01-17T23:59:19.000Z",
+            "id": "1483227467489980418",
+            "lang": "en",
+            "public_metrics": {
+                "like_count": 0,
+                "quote_count": 0,
+                "reply_count": 0,
+                "retweet_count": 191
+            },
+            "referenced_tweets": [
+                {
+                    "id": "1483053602109366274",
+                    "type": "retweeted"
+                }
+            ],
+            "reply_settings": "everyone",
+            "source": "Twitter for iPhone",
+            "text": "RT @unspinthespina1: Cbc are leaving today to cover the Olympics in Beijing (40 days) \n\nMeanwhile China has some sort of underreported hemo\u2026"
+        }
+    ],
+    "includes": {
+        "users": [
+            {
+                "created_at": "2011-04-14T19:56:18.000Z",
+                "description": "From Cleveland, now AZ  #2A  #PROLIFE *  Conservative * \u26be Ohio sports fan * #GoTribe * #RallyTogether \ud83c\uddfa\ud83c\uddf8\ud83d\udc4d #KAG2020  I'm a 1000 miles from nowhere..",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 27,
+                                "start": 24,
+                                "tag": "2A"
+                            },
+                            {
+                                "end": 37,
+                                "start": 29,
+                                "tag": "PROLIFE"
+                            },
+                            {
+                                "end": 84,
+                                "start": 76,
+                                "tag": "GoTribe"
+                            },
+                            {
+                                "end": 101,
+                                "start": 87,
+                                "tag": "RallyTogether"
+                            },
+                            {
+                                "end": 114,
+                                "start": 106,
+                                "tag": "KAG2020"
+                            }
+                        ]
+                    }
+                },
+                "id": "282220986",
+                "name": "\ud83e\udda0 Stephen Kloscak \ud83c\uddfa\ud83c\uddf8 \u26be",
+                "public_metrics": {
+                    "followers_count": 5639,
+                    "following_count": 5307,
+                    "listed_count": 186,
+                    "tweet_count": 411115
+                },
+                "username": "stevekloscak",
+                "verified": false
+            },
+            {
+                "created_at": "2012-11-07T14:42:51.000Z",
+                "description": "Husband, Father, Grandfather, brother, multi horse, dog, and cat household. Veterinarian who also shows jumping horses, ride's Kawi's and plays hockey.",
+                "id": "932214247",
+                "name": "Herb Herbers",
+                "public_metrics": {
+                    "followers_count": 288,
+                    "following_count": 351,
+                    "listed_count": 8,
+                    "tweet_count": 19201
+                },
+                "username": "herbersh",
+                "verified": false
+            },
+            {
+                "created_at": "2010-02-03T11:30:21.000Z",
+                "description": "Cui bono?",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "documentavi.com",
+                                "end": 23,
+                                "expanded_url": "http://www.documentavi.com",
+                                "start": 0,
+                                "url": "https://t.co/ixJM4yJGqe"
+                            }
+                        ]
+                    }
+                },
+                "id": "110971001",
+                "name": "Marek Bogacki",
+                "public_metrics": {
+                    "followers_count": 287,
+                    "following_count": 942,
+                    "listed_count": 4,
+                    "tweet_count": 18009
+                },
+                "username": "documentavi",
+                "verified": false
+            },
+            {
+                "created_at": "2009-02-26T23:24:12.000Z",
+                "description": "Book Engineer.\nCarbon-based symbiant grafted onto silicon-based intelligence unit. Mostly harmless.",
+                "id": "22078562",
+                "name": "Chip Faust",
+                "public_metrics": {
+                    "followers_count": 351,
+                    "following_count": 1192,
+                    "listed_count": 8,
+                    "tweet_count": 33545
+                },
+                "username": "ChipFaust",
+                "verified": false
+            },
+            {
+                "created_at": "2014-03-05T19:46:38.000Z",
+                "description": "Virtual Baraka \nLoves Art,Music,Movie Production techniques of the Canada/US Pacific NW.",
+                "id": "2374260762",
+                "name": "Stay at Home Peter(except I have to work)",
+                "public_metrics": {
+                    "followers_count": 3599,
+                    "following_count": 4998,
+                    "listed_count": 435,
+                    "tweet_count": 345165
+                },
+                "username": "faully33",
+                "verified": false
+            },
+            {
+                "created_at": "2008-11-26T22:59:03.000Z",
+                "description": "Science Librarian, Social VR/Virtual Worlds/Metaverse Blogger, Host of the Metaverse Newscast, and Freebie Queen of Second Life! #SocialVR \ud83c\udde8\ud83c\udde6\ud83c\udff3\ufe0f\u200d\ud83c\udf08 he/him/his",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 138,
+                                "start": 129,
+                                "tag": "SocialVR"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "ryanschultz.com",
+                                "end": 23,
+                                "expanded_url": "https://ryanschultz.com",
+                                "start": 0,
+                                "url": "https://t.co/b72pqYFKjU"
+                            }
+                        ]
+                    }
+                },
+                "id": "17662200",
+                "name": "Ryan Schultz",
+                "public_metrics": {
+                    "followers_count": 1594,
+                    "following_count": 980,
+                    "listed_count": 61,
+                    "tweet_count": 9919
+                },
+                "username": "quiplash",
+                "verified": false
+            },
+            {
+                "created_at": "2009-03-06T16:49:30.000Z",
+                "description": "Democrat, fighting 4 human rights, civil rights, clean \ud83c\udf0e, healthcare4all \u262e\ufe0f \ud83c\uddfa\ud83c\uddf8#LibertyTree\ud83c\udf33\u2728#7of9\ud83d\udd96(fan acc) Vaxxed\ud83d\udc89#TheResistance #RejectFascism",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 90,
+                                "start": 78,
+                                "tag": "LibertyTree"
+                            },
+                            {
+                                "end": 97,
+                                "start": 92,
+                                "tag": "7of9"
+                            },
+                            {
+                                "end": 129,
+                                "start": 115,
+                                "tag": "TheResistance"
+                            },
+                            {
+                                "end": 144,
+                                "start": 130,
+                                "tag": "RejectFascism"
+                            }
+                        ]
+                    }
+                },
+                "id": "23086574",
+                "name": "Arriadna\u2728\ud83c\uddfa\ud83c\uddf8",
+                "public_metrics": {
+                    "followers_count": 39212,
+                    "following_count": 26390,
+                    "listed_count": 9,
+                    "tweet_count": 580103
+                },
+                "username": "Arriadna",
+                "verified": false
+            },
+            {
+                "created_at": "2009-01-06T02:50:22.000Z",
+                "description": "Artist (seeking the Generative) - \u201cArt&Faith: A Theology of Making\u201d (@YalePress). Contact hello@MakotoFujimura.com to see High Line Nine exhibit",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 79,
+                                "start": 69,
+                                "username": "YalePress"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "makotofujimura.com",
+                                "end": 23,
+                                "expanded_url": "http://www.makotofujimura.com",
+                                "start": 0,
+                                "url": "https://t.co/vUNCHGyJ71"
+                            }
+                        ]
+                    }
+                },
+                "id": "18658713",
+                "name": "Makoto Fujimura",
+                "public_metrics": {
+                    "followers_count": 21542,
+                    "following_count": 13775,
+                    "listed_count": 571,
+                    "tweet_count": 31578
+                },
+                "username": "iamfujimura",
+                "verified": false
+            },
+            {
+                "created_at": "2009-02-25T11:59:35.000Z",
+                "description": "wife, mum of 2 (1 with sp needs), all views my own. live music veteran. greyhound servant. #vaccinessavelives",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 109,
+                                "start": 91,
+                                "tag": "vaccinessavelives"
+                            }
+                        ]
+                    }
+                },
+                "id": "21858124",
+                "name": "Ciara Leahy",
+                "public_metrics": {
+                    "followers_count": 508,
+                    "following_count": 829,
+                    "listed_count": 5,
+                    "tweet_count": 11993
+                },
+                "username": "ciaraleahy",
+                "verified": false
+            },
+            {
+                "created_at": "2009-05-01T02:43:48.000Z",
+                "description": "West Hawaii Master Gardener",
+                "id": "36860872",
+                "name": "Celeste Makrevis",
+                "public_metrics": {
+                    "followers_count": 55,
+                    "following_count": 657,
+                    "listed_count": 0,
+                    "tweet_count": 51280
+                },
+                "username": "celestemak",
+                "verified": false
+            },
+            {
+                "created_at": "2021-12-04T23:49:27.000Z",
+                "description": "Educator and advocate. Views are my own personal thoughts and not representative of any other person or organisation.",
+                "id": "1467279803979943936",
+                "name": "Guv",
+                "public_metrics": {
+                    "followers_count": 19,
+                    "following_count": 31,
+                    "listed_count": 0,
+                    "tweet_count": 928
+                },
+                "username": "Guv123456",
+                "verified": false
+            },
+            {
+                "created_at": "2021-10-09T07:38:11.000Z",
+                "description": "",
+                "id": "1446741670960058370",
+                "name": "El",
+                "public_metrics": {
+                    "followers_count": 3,
+                    "following_count": 23,
+                    "listed_count": 0,
+                    "tweet_count": 687
+                },
+                "username": "Ellie_Coc0",
+                "verified": false
+            },
+            {
+                "created_at": "2019-08-11T01:57:41.000Z",
+                "description": "A Father, A Cantab, A Worker, A Leftie & proud to be every one of them.\n\nVaccinated and encourage all to do the same.\n\n#getthejab",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 129,
+                                "start": 119,
+                                "tag": "getthejab"
+                            }
+                        ]
+                    }
+                },
+                "id": "1160369664871948288",
+                "name": "Leonard Craig Kendrick \ud83d\udc89\ud83d\udc89\ud83d\udc89",
+                "public_metrics": {
+                    "followers_count": 1599,
+                    "following_count": 4221,
+                    "listed_count": 2,
+                    "tweet_count": 21705
+                },
+                "username": "CraigKendricknz",
+                "verified": false
+            },
+            {
+                "created_at": "2009-03-03T09:38:54.000Z",
+                "description": "Director, Capital GR. Former senior @nzlabour adviser. Regular political commentator on @RadioNZ, @NewstalkZB & @NewshubNationNZ. Opinions mine.",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 45,
+                                "start": 36,
+                                "username": "nzlabour"
+                            },
+                            {
+                                "end": 96,
+                                "start": 88,
+                                "username": "RadioNZ"
+                            },
+                            {
+                                "end": 109,
+                                "start": 98,
+                                "username": "NewstalkZB"
+                            },
+                            {
+                                "end": 128,
+                                "start": 112,
+                                "username": "NewshubNationNZ"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "capitalnz.com",
+                                "end": 23,
+                                "expanded_url": "http://www.capitalnz.com",
+                                "start": 0,
+                                "url": "https://t.co/egptaLDarY"
+                            }
+                        ]
+                    }
+                },
+                "id": "22605803",
+                "name": "Neale Jones",
+                "public_metrics": {
+                    "followers_count": 12253,
+                    "following_count": 2403,
+                    "listed_count": 62,
+                    "tweet_count": 28305
+                },
+                "username": "nealejones",
+                "verified": false
+            },
+            {
+                "created_at": "2009-05-24T03:22:46.000Z",
+                "description": "The Invisible Hand - Fighting statism since late last night. Ringleader. Retweets \u2260 endorsements; Likes \u2260 likes",
+                "id": "42154919",
+                "name": "(((Dan Philip)))",
+                "public_metrics": {
+                    "followers_count": 538,
+                    "following_count": 526,
+                    "listed_count": 29,
+                    "tweet_count": 69737
+                },
+                "username": "TheInvisibleDan",
+                "verified": false
+            },
+            {
+                "created_at": "2008-07-11T20:09:03.000Z",
+                "description": "Opinion haver, \ud83d\udc15 lover, \ud83c\udf31eater, feminist. Striving to be a traitor to my class. I run @FrlessAdvocacy. My \u2764\ufe0f work is @lcjanda. Always ask for the denominator.",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 101,
+                                "start": 86,
+                                "username": "FrlessAdvocacy"
+                            },
+                            {
+                                "end": 125,
+                                "start": 117,
+                                "username": "lcjanda"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "fearlessadvocacy.com",
+                                "end": 23,
+                                "expanded_url": "http://fearlessadvocacy.com",
+                                "start": 0,
+                                "url": "https://t.co/EalOp1pVQG"
+                            }
+                        ]
+                    }
+                },
+                "id": "15396053",
+                "name": "Jennifer Fearing",
+                "public_metrics": {
+                    "followers_count": 5980,
+                    "following_count": 3465,
+                    "listed_count": 170,
+                    "tweet_count": 23110
+                },
+                "username": "JenniferFearing",
+                "verified": false
+            },
+            {
+                "created_at": "2012-11-05T17:09:55.000Z",
+                "description": "Historian, troublemaker, noise musician, preservationist and Sacramento history writer. President, @preservationsac & @sacheritage. #KeepMidtownJanky He/him.",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 149,
+                                "start": 132,
+                                "tag": "KeepMidtownJanky"
+                            }
+                        ],
+                        "mentions": [
+                            {
+                                "end": 115,
+                                "start": 99,
+                                "username": "preservationsac"
+                            },
+                            {
+                                "end": 130,
+                                "start": 118,
+                                "username": "sacheritage"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "superartmedia.square.site",
+                                "end": 23,
+                                "expanded_url": "http://superartmedia.square.site",
+                                "start": 0,
+                                "url": "https://t.co/50nhtzhWnl"
+                            }
+                        ]
+                    }
+                },
+                "id": "928019185",
+                "name": "William Burg",
+                "public_metrics": {
+                    "followers_count": 2082,
+                    "following_count": 514,
+                    "listed_count": 41,
+                    "tweet_count": 19393
+                },
+                "username": "oldcityguardian",
+                "verified": false
+            },
+            {
+                "created_at": "2013-08-25T13:04:12.000Z",
+                "description": "A cherished upbringing, built around respect, adored my parents, only regret they didn\u2019t live long enough to see their 3 beautiful Grandchildren. Love my family",
+                "id": "1699185475",
+                "name": "Esswendon",
+                "public_metrics": {
+                    "followers_count": 367,
+                    "following_count": 664,
+                    "listed_count": 9,
+                    "tweet_count": 6800
+                },
+                "username": "Esswendon",
+                "verified": false
+            },
+            {
+                "created_at": "2020-05-12T09:31:58.000Z",
+                "description": "\u201cThe welfare of the people has always been the alibi of tyrants, and it provides the advantage of giving the servants of tyranny a good conscience.\u201d",
+                "id": "1260140617046175746",
+                "name": "Silver Fox",
+                "public_metrics": {
+                    "followers_count": 70,
+                    "following_count": 66,
+                    "listed_count": 5,
+                    "tweet_count": 2455
+                },
+                "username": "cunningreyfox",
+                "verified": false
+            },
+            {
+                "created_at": "2015-02-09T08:41:36.000Z",
+                "description": "",
+                "id": "3014101080",
+                "name": "Played By Games",
+                "public_metrics": {
+                    "followers_count": 8,
+                    "following_count": 83,
+                    "listed_count": 1,
+                    "tweet_count": 2396
+                },
+                "username": "PlayedByGames",
+                "verified": false
+            },
+            {
+                "created_at": "2013-08-31T11:22:54.000Z",
+                "description": "",
+                "id": "1715434532",
+                "name": "YU HAO YU",
+                "public_metrics": {
+                    "followers_count": 24,
+                    "following_count": 199,
+                    "listed_count": 2,
+                    "tweet_count": 50062
+                },
+                "username": "cestleiden",
+                "verified": false
+            },
+            {
+                "created_at": "2010-10-17T17:22:41.000Z",
+                "description": "Working wife and mother of 2 boys. On Twitter to learn from others, share my views, and (perhaps) win hearts and minds.",
+                "id": "203987842",
+                "name": "Carrie Moley",
+                "public_metrics": {
+                    "followers_count": 1486,
+                    "following_count": 1232,
+                    "listed_count": 7,
+                    "tweet_count": 72947
+                },
+                "username": "carrie_moley",
+                "verified": false
+            },
+            {
+                "created_at": "2021-09-22T04:48:26.000Z",
+                "description": "",
+                "id": "1440538267607134211",
+                "name": "Claire Wallace",
+                "public_metrics": {
+                    "followers_count": 6,
+                    "following_count": 8,
+                    "listed_count": 0,
+                    "tweet_count": 59
+                },
+                "username": "ClaireW13696061",
+                "verified": false
+            },
+            {
+                "created_at": "2021-01-09T04:23:17.000Z",
+                "description": "\ud83c\udf35\ud83c\udf38Happily married to my F-16 pilot Veteran, mom of 4, & Grammy\ud83d\ude4f\ud83c\udffb\ud83c\uddfa\ud83c\uddf8",
+                "id": "1347760701520146440",
+                "name": "Bell",
+                "public_metrics": {
+                    "followers_count": 10530,
+                    "following_count": 8933,
+                    "listed_count": 5,
+                    "tweet_count": 88192
+                },
+                "username": "Bell2024_",
+                "verified": false
+            },
+            {
+                "created_at": "2011-02-25T02:45:04.000Z",
+                "description": "PAFC \ud83c\udfc8\ud83d\udc99\u26ab\u26aa\u2640\ufe0f\ud83c\udf08\ud83c\udf08\n\u2665\ufe0f\ud83d\udda4\ud83d\udc9b\ud83d\udc63ANTI CORRUPTION.Sewer Rat Fighting for justice & survivors of abuse the global environment.Privileged & honored to live on Kaurna Land",
+                "id": "257276137",
+                "name": "Robyn Bonser\ud83d\udd6f\ufe0f\ud83d\udd6f\ufe0f\ud83d\udd6f\ufe0f\ud83d\udd6f\ufe0f\ud83d\udd6f\ufe0fsewer\ud83d\udc00",
+                "public_metrics": {
+                    "followers_count": 3862,
+                    "following_count": 5005,
+                    "listed_count": 10,
+                    "tweet_count": 269650
+                },
+                "username": "Bloss55",
+                "verified": false
+            },
+            {
+                "created_at": "2021-06-01T21:52:09.000Z",
+                "description": "Myself",
+                "id": "1399846174438350849",
+                "name": "Jamie e Hill",
+                "public_metrics": {
+                    "followers_count": 15,
+                    "following_count": 119,
+                    "listed_count": 0,
+                    "tweet_count": 194
+                },
+                "username": "JamieeHill2",
+                "verified": false
+            },
+            {
+                "created_at": "2013-06-19T15:46:46.000Z",
+                "description": "\ud83c\udfac\ud83c\udfa5| Actor | 26 years old |\ud83d\udccdLos Angeles | Thanks for following my journey \ud83d\ude0e| \u2709\ufe0f Business Inquiries: cecil.choate3695@gmail.com",
+                "id": "1531185990",
+                "name": "Cecil Choate",
+                "public_metrics": {
+                    "followers_count": 1129,
+                    "following_count": 3404,
+                    "listed_count": 135,
+                    "tweet_count": 230389
+                },
+                "username": "Cecil3695Cecil",
+                "verified": false
+            },
+            {
+                "created_at": "2013-03-31T03:51:38.000Z",
+                "description": "",
+                "id": "1317675775",
+                "name": "Gail",
+                "public_metrics": {
+                    "followers_count": 153,
+                    "following_count": 516,
+                    "listed_count": 0,
+                    "tweet_count": 15688
+                },
+                "username": "Gail__Z",
+                "verified": false
+            },
+            {
+                "created_at": "2020-02-20T20:36:56.000Z",
+                "description": "There is nothing which can better deserve your patronage, than the promotion of Science and Literature.  George Washington",
+                "id": "1230592110006542337",
+                "name": "Turner D, RPh \ud83c\udf0a\ud83d\udc0a\ud83d\udc89\ud83d\udc89\ud83d\udc89",
+                "public_metrics": {
+                    "followers_count": 1359,
+                    "following_count": 1985,
+                    "listed_count": 5,
+                    "tweet_count": 15990
+                },
+                "username": "SaveDem79589185",
+                "verified": false
+            },
+            {
+                "created_at": "2020-05-26T01:00:57.000Z",
+                "description": "Jesus Christ is Lord! Family, Friends and the USA",
+                "id": "1265085149949169664",
+                "name": "@SaltandLight",
+                "public_metrics": {
+                    "followers_count": 389,
+                    "following_count": 825,
+                    "listed_count": 0,
+                    "tweet_count": 29121
+                },
+                "username": "OneWonby",
+                "verified": false
+            },
+            {
+                "created_at": "2014-06-20T21:09:04.000Z",
+                "description": "Greta Gerwig for President 2024",
+                "id": "2579262878",
+                "name": "Allison Scapellati",
+                "public_metrics": {
+                    "followers_count": 102,
+                    "following_count": 714,
+                    "listed_count": 2,
+                    "tweet_count": 5090
+                },
+                "username": "AlliScapellati",
+                "verified": false
+            },
+            {
+                "created_at": "2013-04-04T19:34:48.000Z",
+                "description": "Skeptic and mixed politically. I have run tech companies and currently have a biotech innovation that I am passionate about. Safe antimicrobial cleanser. Vesta.",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "vestahealthsystems.com",
+                                "end": 23,
+                                "expanded_url": "http://www.vestahealthsystems.com",
+                                "start": 0,
+                                "url": "https://t.co/3IQQrRQM9A"
+                            }
+                        ]
+                    }
+                },
+                "id": "1327666400",
+                "name": "Alan Smith",
+                "public_metrics": {
+                    "followers_count": 1859,
+                    "following_count": 2806,
+                    "listed_count": 29,
+                    "tweet_count": 52996
+                },
+                "username": "Alan_G_Smith_BC",
+                "verified": false
+            },
+            {
+                "created_at": "2010-08-06T01:56:42.000Z",
+                "description": "Tired of the media gods and politicians who take us for fools and treat us like children. Tired of their silence on asylum seekers. Interested in facts.",
+                "id": "175238215",
+                "name": "Prince Fed up",
+                "public_metrics": {
+                    "followers_count": 2297,
+                    "following_count": 551,
+                    "listed_count": 101,
+                    "tweet_count": 260143
+                },
+                "username": "somuchbullsh",
+                "verified": false
+            },
+            {
+                "created_at": "2021-06-16T17:09:34.000Z",
+                "description": "What ever!",
+                "id": "1405210926572212226",
+                "name": "Alli Babaras",
+                "public_metrics": {
+                    "followers_count": 198,
+                    "following_count": 544,
+                    "listed_count": 0,
+                    "tweet_count": 14882
+                },
+                "username": "AlliBabaras",
+                "verified": false
+            },
+            {
+                "created_at": "2017-04-06T23:14:37.000Z",
+                "description": "Transpo, both sides of the gurney, different abilities specialist.  Likes cycling, fitness, tea. \n RTs, links, and likes aren't necessarily endorsements.",
+                "id": "850124612549705728",
+                "name": "Rexanna Keats",
+                "public_metrics": {
+                    "followers_count": 1138,
+                    "following_count": 300,
+                    "listed_count": 2,
+                    "tweet_count": 151353
+                },
+                "username": "RexannaKeats",
+                "verified": false
+            },
+            {
+                "created_at": "2020-05-12T19:32:02.000Z",
+                "description": "Proud member of the People's Party of Canada, the only party not betraying Canada to the likes of the World Economic Forum and Big Pharma via Bill Gates.",
+                "id": "1260291453973983232",
+                "name": "ChloroquineGuerilla\ud83d\ude0a",
+                "public_metrics": {
+                    "followers_count": 2363,
+                    "following_count": 795,
+                    "listed_count": 15,
+                    "tweet_count": 128480
+                },
+                "username": "ProlongingCovid",
+                "verified": false
+            },
+            {
+                "created_at": "2021-10-06T14:01:37.000Z",
+                "description": "Traveling with dogs",
+                "id": "1445751022526160908",
+                "name": "Rachel",
+                "public_metrics": {
+                    "followers_count": 405,
+                    "following_count": 301,
+                    "listed_count": 5,
+                    "tweet_count": 15271
+                },
+                "username": "Rachel93369258",
+                "verified": false
+            },
+            {
+                "created_at": "2013-10-26T17:27:32.000Z",
+                "description": "UK based NFT photographer. \n\nCollection dropping in February on OS of my best work from the last 12 years in the industry.",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "opensea.io/collection/ogp\u2026",
+                                "end": 23,
+                                "expanded_url": "https://opensea.io/collection/ogphotographicseries",
+                                "start": 0,
+                                "url": "https://t.co/RydfXzb4YH"
+                            }
+                        ]
+                    }
+                },
+                "id": "2154587513",
+                "name": "Mr__OG",
+                "public_metrics": {
+                    "followers_count": 344,
+                    "following_count": 361,
+                    "listed_count": 3,
+                    "tweet_count": 3787
+                },
+                "username": "Mr__OG",
+                "verified": false
+            },
+            {
+                "created_at": "2016-04-02T22:12:24.000Z",
+                "description": "He/Him | Furry n' shit | I speak Spanish and English | Socialist | Humanist | BLM | Free Palestine | ACAB | Anti-Fascist | Banner by @pitadraws.",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 143,
+                                "start": 133,
+                                "username": "pitadraws"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "twitch.tv/liat",
+                                "end": 23,
+                                "expanded_url": "http://twitch.tv/liat",
+                                "start": 0,
+                                "url": "https://t.co/Uc1GICDfqZ"
+                            }
+                        ]
+                    }
+                },
+                "id": "716387836618878977",
+                "name": "Liat #BLM",
+                "public_metrics": {
+                    "followers_count": 303,
+                    "following_count": 1390,
+                    "listed_count": 1,
+                    "tweet_count": 90289
+                },
+                "username": "LiatKolink",
+                "verified": false
+            },
+            {
+                "created_at": "2021-08-19T00:45:21.000Z",
+                "description": "",
+                "id": "1428156038750953473",
+                "name": "AOC and Pelosi are the same shit!",
+                "public_metrics": {
+                    "followers_count": 7,
+                    "following_count": 68,
+                    "listed_count": 0,
+                    "tweet_count": 195
+                },
+                "username": "FFanciest",
+                "verified": false
+            },
+            {
+                "created_at": "2011-02-04T07:14:42.000Z",
+                "description": "Harris County Judge (executive of our nation\u2019s third-largest county). Progressive. Texan. Runner. Proud immigrant. Official account: @HarrisCoJudge",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 147,
+                                "start": 133,
+                                "username": "HarrisCoJudge"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "LinaHidalgo.com",
+                                "end": 23,
+                                "expanded_url": "http://www.LinaHidalgo.com",
+                                "start": 0,
+                                "url": "https://t.co/MRJhbu1L7Y"
+                            }
+                        ]
+                    }
+                },
+                "id": "247174365",
+                "name": "Lina Hidalgo",
+                "public_metrics": {
+                    "followers_count": 139894,
+                    "following_count": 674,
+                    "listed_count": 655,
+                    "tweet_count": 3290
+                },
+                "username": "LinaHidalgoTX",
+                "verified": true
+            },
+            {
+                "created_at": "2010-01-09T22:28:05.000Z",
+                "description": "I do a little bit of everything & that makes me happy. PR \ud83d\udccc Producer \ud83c\udfac SMM \ud83d\udcf1Set Design \ud83e\uddf1 Content Creation \u2022 Alums: CARIMAC, Glenmuir, STGC \u2022 \u264d\ufe0f \u2022 @_davicham",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 156,
+                                "start": 146,
+                                "username": "_davicham"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "instagram.com/_vidacommunica\u2026",
+                                "end": 23,
+                                "expanded_url": "https://www.instagram.com/_vidacommunications/",
+                                "start": 0,
+                                "url": "https://t.co/IGU8G7dAps"
+                            }
+                        ]
+                    }
+                },
+                "id": "103399912",
+                "name": "Dav\ud83c\udf3b",
+                "public_metrics": {
+                    "followers_count": 957,
+                    "following_count": 841,
+                    "listed_count": 15,
+                    "tweet_count": 207011
+                },
+                "username": "Mz_Dasha",
+                "verified": false
+            },
+            {
+                "created_at": "2012-08-21T05:21:55.000Z",
+                "description": "",
+                "id": "770879618",
+                "name": "Erica4ou",
+                "public_metrics": {
+                    "followers_count": 2467,
+                    "following_count": 62,
+                    "listed_count": 54,
+                    "tweet_count": 147749
+                },
+                "username": "erica4ou",
+                "verified": false
+            },
+            {
+                "created_at": "2009-04-14T18:12:14.000Z",
+                "description": "",
+                "id": "31184259",
+                "name": "matt grant",
+                "public_metrics": {
+                    "followers_count": 24,
+                    "following_count": 79,
+                    "listed_count": 0,
+                    "tweet_count": 1828
+                },
+                "username": "mattgrantdc",
+                "verified": false
+            },
+            {
+                "created_at": "2021-01-31T02:04:33.000Z",
+                "description": "love to travel, labor all the way,hate liars,\nBelgian born\nrespect got to be earned, not demanded\nliving on Natji Natji land",
+                "id": "1355698353569325056",
+                "name": "Henri Rooze. De Vlaaming",
+                "public_metrics": {
+                    "followers_count": 1371,
+                    "following_count": 1730,
+                    "listed_count": 4,
+                    "tweet_count": 44210
+                },
+                "username": "Henri52562169",
+                "verified": false
+            },
+            {
+                "created_at": "2010-02-14T02:43:38.000Z",
+                "description": "Elections through ballot paper ONLY. #\nReligion is for liberation!!! # CRYPTO # HOLD YOUR DOGE",
+                "id": "114084421",
+                "name": "aneesh Chopra",
+                "public_metrics": {
+                    "followers_count": 248,
+                    "following_count": 2163,
+                    "listed_count": 2,
+                    "tweet_count": 8175
+                },
+                "username": "mahamayaa",
+                "verified": false
+            },
+            {
+                "created_at": "2021-03-15T07:03:04.000Z",
+                "description": "",
+                "id": "1371356077862780930",
+                "name": "carolyn Cope",
+                "public_metrics": {
+                    "followers_count": 112,
+                    "following_count": 145,
+                    "listed_count": 0,
+                    "tweet_count": 4947
+                },
+                "username": "carolynCope18",
+                "verified": false
+            },
+            {
+                "created_at": "2020-07-08T12:48:29.000Z",
+                "description": "Ex-Labor voter. Get rid of corrupt #DictatorDan. I don't live on Aboriginal land. Send fake refugees home. South Melbourne/Sydney Swans 2022 Premiers! Lawyer.",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 47,
+                                "start": 35,
+                                "tag": "DictatorDan"
+                            }
+                        ]
+                    }
+                },
+                "id": "1280846169850036224",
+                "name": "Don't Newspeak To Me",
+                "public_metrics": {
+                    "followers_count": 976,
+                    "following_count": 1096,
+                    "listed_count": 3,
+                    "tweet_count": 11714
+                },
+                "username": "Crystal56406138",
+                "verified": false
+            },
+            {
+                "created_at": "2016-11-19T06:15:34.000Z",
+                "description": "",
+                "id": "799858635677405184",
+                "name": "Liesel Thorn",
+                "public_metrics": {
+                    "followers_count": 23,
+                    "following_count": 91,
+                    "listed_count": 0,
+                    "tweet_count": 164
+                },
+                "username": "LieselThorn",
+                "verified": false
+            },
+            {
+                "created_at": "2013-03-11T20:07:42.000Z",
+                "description": "Mangou | art account @MangouArts | smol | K\u00f6nigin der Nacht | she/her | queer desaster \ud83c\udff3\ufe0f\u200d\ud83c\udf08 | 20+ yrs old | goblin",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 32,
+                                "start": 21,
+                                "username": "MangouArts"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "facebook.com/MangouArts/",
+                                "end": 23,
+                                "expanded_url": "https://www.facebook.com/MangouArts/",
+                                "start": 0,
+                                "url": "https://t.co/sQqds0wSRB"
+                            }
+                        ]
+                    }
+                },
+                "id": "1260310244",
+                "name": "bisexual goblin",
+                "public_metrics": {
+                    "followers_count": 322,
+                    "following_count": 719,
+                    "listed_count": 11,
+                    "tweet_count": 141113
+                },
+                "username": "MangouDraws",
+                "verified": false
+            },
+            {
+                "created_at": "2009-07-02T22:11:29.000Z",
+                "description": "the tide is high but i\u2019m (BARELY) holding on. cover art by my sis\ud83d\udc96",
+                "id": "53204949",
+                "name": "DRRRRR",
+                "public_metrics": {
+                    "followers_count": 266,
+                    "following_count": 118,
+                    "listed_count": 6,
+                    "tweet_count": 18387
+                },
+                "username": "dgrocks",
+                "verified": false
+            },
+            {
+                "created_at": "2017-07-20T20:02:45.000Z",
+                "description": "",
+                "id": "888127055619018754",
+                "name": "Gail Tomashewski",
+                "public_metrics": {
+                    "followers_count": 50,
+                    "following_count": 133,
+                    "listed_count": 1,
+                    "tweet_count": 8082
+                },
+                "username": "GailTom9",
+                "verified": false
+            },
+            {
+                "created_at": "2014-02-27T19:44:06.000Z",
+                "description": "I can do all things through spite which strengthens me. Doctoral Candidate. Your fav Villain. If you don\u2019t like me why are you here?",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "amazon.com/hz/wishlist/ls\u2026",
+                                "end": 23,
+                                "expanded_url": "https://www.amazon.com/hz/wishlist/ls/14O7YA1VNWTVY?ref_=wl_share",
+                                "start": 0,
+                                "url": "https://t.co/hz2JXX5SFc"
+                            }
+                        ]
+                    }
+                },
+                "id": "2364599179",
+                "name": "Hurricane Tay \ud83d\udd2a",
+                "public_metrics": {
+                    "followers_count": 492,
+                    "following_count": 1708,
+                    "listed_count": 0,
+                    "tweet_count": 15999
+                },
+                "username": "TheHurricaneTay",
+                "verified": false
+            },
+            {
+                "created_at": "2020-11-04T08:10:48.000Z",
+                "description": "#Australian #Victorian #lockdownexpert #AlboForPM #FederalICACNow #IStandWithDan #DoubleVaxandbooster",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 11,
+                                "start": 0,
+                                "tag": "Australian"
+                            },
+                            {
+                                "end": 22,
+                                "start": 12,
+                                "tag": "Victorian"
+                            },
+                            {
+                                "end": 38,
+                                "start": 23,
+                                "tag": "lockdownexpert"
+                            },
+                            {
+                                "end": 49,
+                                "start": 39,
+                                "tag": "AlboForPM"
+                            },
+                            {
+                                "end": 65,
+                                "start": 50,
+                                "tag": "FederalICACNow"
+                            },
+                            {
+                                "end": 80,
+                                "start": 66,
+                                "tag": "IStandWithDan"
+                            },
+                            {
+                                "end": 101,
+                                "start": 81,
+                                "tag": "DoubleVaxandbooster"
+                            }
+                        ]
+                    }
+                },
+                "id": "1323900405227511808",
+                "name": "Judy \ud83d\udc89\ud83d\udc89\ud83d\udc89\ud83d\ude37\ud83d\ude0e\ud83d\udc8b\ud83e\udd42\ud83c\udfdd\ud83c\udf3a\ud83c\udf38\ud83d\udc36",
+                "public_metrics": {
+                    "followers_count": 603,
+                    "following_count": 1145,
+                    "listed_count": 0,
+                    "tweet_count": 19124
+                },
+                "username": "JudyHinchcliffe",
+                "verified": false
+            },
+            {
+                "created_at": "2011-11-11T16:57:59.000Z",
+                "description": "Demiurgo desde avanzada edad. Hago magufadas. Opino que todos vais a ir al infierno. Historiador. Ahora, investigando sobre coronavirus. #BigHistory.",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 148,
+                                "start": 137,
+                                "tag": "BigHistory"
+                            }
+                        ]
+                    }
+                },
+                "id": "410103064",
+                "name": "El Demiurgo",
+                "public_metrics": {
+                    "followers_count": 1035,
+                    "following_count": 1035,
+                    "listed_count": 38,
+                    "tweet_count": 481226
+                },
+                "username": "DemiurgoTuiter",
+                "verified": false
+            },
+            {
+                "created_at": "2018-08-09T13:59:33.000Z",
+                "description": "-- i've been told I don't tweet correctly -- Pureblood/Non-GMO -- \ud83c\uddfa\ud83c\uddf8\ud83c\udff4\u200d\u2620\ufe0f -- \u2651 --",
+                "id": "1027554979555536897",
+                "name": "Nugget, Non-GMO, 1 ea",
+                "public_metrics": {
+                    "followers_count": 100,
+                    "following_count": 465,
+                    "listed_count": 0,
+                    "tweet_count": 3508
+                },
+                "username": "Turbonugget13",
+                "verified": false
+            },
+            {
+                "created_at": "2016-01-20T06:52:09.000Z",
+                "description": "Former CIA Ops Officer. America First. Fan of logic & reason. Allergic to DC egos. Farming & ranching in my blood. Love Arizona, miss Oregon.",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "BryanDeanWright.com",
+                                "end": 23,
+                                "expanded_url": "http://BryanDeanWright.com",
+                                "start": 0,
+                                "url": "https://t.co/BGKTwCKI4G"
+                            }
+                        ]
+                    }
+                },
+                "id": "4787411118",
+                "name": "BDW",
+                "public_metrics": {
+                    "followers_count": 127737,
+                    "following_count": 1208,
+                    "listed_count": 548,
+                    "tweet_count": 7786
+                },
+                "username": "BryanDeanWright",
+                "verified": true
+            },
+            {
+                "created_at": "2008-06-15T05:40:55.000Z",
+                "description": "Elections have consequences. She/ella. \ud83c\udff3\ufe0f\u200d\ud83c\udf08#BLM #WarrenDemocrat. Cal alumna.",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 47,
+                                "start": 43,
+                                "tag": "BLM"
+                            },
+                            {
+                                "end": 63,
+                                "start": 48,
+                                "tag": "WarrenDemocrat"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "abortionfunds.org",
+                                "end": 23,
+                                "expanded_url": "https://abortionfunds.org",
+                                "start": 0,
+                                "url": "https://t.co/4WzO84CPAz"
+                            }
+                        ]
+                    }
+                },
+                "id": "15122683",
+                "name": "Ilse Villacorta",
+                "public_metrics": {
+                    "followers_count": 509,
+                    "following_count": 5008,
+                    "listed_count": 2,
+                    "tweet_count": 45889
+                },
+                "username": "ilsevillacorta",
+                "verified": false
+            },
+            {
+                "created_at": "2009-07-20T15:09:12.000Z",
+                "description": "",
+                "id": "58496285",
+                "name": "lynda mackay",
+                "public_metrics": {
+                    "followers_count": 261,
+                    "following_count": 237,
+                    "listed_count": 0,
+                    "tweet_count": 17136
+                },
+                "username": "amberpot",
+                "verified": false
+            },
+            {
+                "created_at": "2008-03-09T14:25:34.000Z",
+                "description": "Sermon critic, Technologist, Former Radio personality. Interests: Identity Mgmt, Germany, Unix, Adoption, Politics & Illuminating injustices I perceive.",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "kfarms.org",
+                                "end": 23,
+                                "expanded_url": "http://www.kfarms.org",
+                                "start": 0,
+                                "url": "https://t.co/sWU6Wtypvv"
+                            }
+                        ]
+                    }
+                },
+                "id": "14107564",
+                "name": "Jeffrey King",
+                "public_metrics": {
+                    "followers_count": 561,
+                    "following_count": 3273,
+                    "listed_count": 11,
+                    "tweet_count": 35633
+                },
+                "username": "n1djs",
+                "verified": false
+            },
+            {
+                "created_at": "2019-02-06T20:29:11.000Z",
+                "description": "Harris County Judge Lina Hidalgo serves as Chief Executive of our nation's 3rd largest county. Official account. For Judge's personal feed: @LinaHidalgoTX",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 154,
+                                "start": 140,
+                                "username": "LinaHidalgoTX"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "cjo.harriscountytx.gov",
+                                "end": 23,
+                                "expanded_url": "http://cjo.harriscountytx.gov/",
+                                "start": 0,
+                                "url": "https://t.co/kWDWgV64I1"
+                            }
+                        ]
+                    }
+                },
+                "id": "1093245238917955588",
+                "name": "Office of Judge Lina Hidalgo",
+                "public_metrics": {
+                    "followers_count": 59915,
+                    "following_count": 128,
+                    "listed_count": 341,
+                    "tweet_count": 1482
+                },
+                "username": "HarrisCoJudge",
+                "verified": true
+            },
+            {
+                "created_at": "2012-04-23T00:32:18.000Z",
+                "description": "book / movie lover and the World is ours to discover  \ud83c\udde8\ud83c\udde6\ud83c\udf0d#resist #teamtrudeau",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 64,
+                                "start": 57,
+                                "tag": "resist"
+                            },
+                            {
+                                "end": 77,
+                                "start": 65,
+                                "tag": "teamtrudeau"
+                            }
+                        ]
+                    }
+                },
+                "id": "560707426",
+                "name": "Anik",
+                "public_metrics": {
+                    "followers_count": 2053,
+                    "following_count": 767,
+                    "listed_count": 2,
+                    "tweet_count": 315050
+                },
+                "username": "anik1968",
+                "verified": false
+            },
+            {
+                "created_at": "2021-10-16T01:32:23.000Z",
+                "description": "Fitness nutrition trainer. Former bodybuilding computer. Former Ms. Ny us beauty. Mother. Grandmother.  Live life to fullest regardless of what's going on.",
+                "id": "1449186361752293378",
+                "name": "Marie",
+                "public_metrics": {
+                    "followers_count": 0,
+                    "following_count": 6,
+                    "listed_count": 0,
+                    "tweet_count": 120
+                },
+                "username": "Marie13206",
+                "verified": false
+            },
+            {
+                "created_at": "2017-05-31T16:26:03.000Z",
+                "description": "Follower of politics and very opinionated. Supporter of common sense, respectful debate and pragmatism. Everton supporter and rubbish golfer!",
+                "id": "869953126551482368",
+                "name": "Kerry Ferguson",
+                "public_metrics": {
+                    "followers_count": 727,
+                    "following_count": 560,
+                    "listed_count": 3,
+                    "tweet_count": 43872
+                },
+                "username": "FergKerry",
+                "verified": false
+            },
+            {
+                "created_at": "2011-03-03T15:44:12.000Z",
+                "description": "One million tiny totally worthwhile comments. Mostly here to reply \"same\" or \"yikes\" or \"where's the lie\" or \"nice ratio\" or \"F\" (he/him)",
+                "id": "260286890",
+                "name": "An Intersectional Gipper",
+                "public_metrics": {
+                    "followers_count": 335,
+                    "following_count": 436,
+                    "listed_count": 4,
+                    "tweet_count": 30905
+                },
+                "username": "WokeReagan",
+                "verified": false
+            },
+            {
+                "created_at": "2014-11-15T13:47:20.000Z",
+                "description": "Choral and General Music Teacher. #OpenSchools DC/MD/VA",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 46,
+                                "start": 34,
+                                "tag": "OpenSchools"
+                            }
+                        ]
+                    }
+                },
+                "id": "2878063612",
+                "name": "Will Tell",
+                "public_metrics": {
+                    "followers_count": 888,
+                    "following_count": 2449,
+                    "listed_count": 11,
+                    "tweet_count": 29284
+                },
+                "username": "MuseSeeking",
+                "verified": false
+            },
+            {
+                "created_at": "2013-07-18T08:24:41.000Z",
+                "description": "This is a personal account. Owned and operated by a hemorrhoid.\nDon't fuck with me Assholes.\n\nNo, I'm not mad.          \n\n$BrianIzes\n\nhttps://t.co/wI6nAaZr3H",
+                "entities": {
+                    "description": {
+                        "urls": [
+                            {
+                                "display_url": "mobile.twitter.com",
+                                "end": 157,
+                                "expanded_url": "https://mobile.twitter.com",
+                                "start": 134,
+                                "url": "https://t.co/wI6nAaZr3H"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "mobile.twitter.com/search?q=from:\u2026",
+                                "end": 23,
+                                "expanded_url": "https://mobile.twitter.com/search?q=from:brainzandbrainz",
+                                "start": 0,
+                                "url": "https://t.co/pv3tuFHsYt"
+                            }
+                        ]
+                    }
+                },
+                "id": "1602930967",
+                "name": "SHIT_WTF",
+                "public_metrics": {
+                    "followers_count": 212,
+                    "following_count": 438,
+                    "listed_count": 0,
+                    "tweet_count": 6577
+                },
+                "username": "brainzandbrainz",
+                "verified": false
+            },
+            {
+                "created_at": "2021-11-03T17:57:11.000Z",
+                "description": "Spirit\ud83d\udddd",
+                "id": "1455957107161935873",
+                "name": "HermanW9911",
+                "public_metrics": {
+                    "followers_count": 177,
+                    "following_count": 739,
+                    "listed_count": 2,
+                    "tweet_count": 1262
+                },
+                "username": "HermanW9911",
+                "verified": false
+            },
+            {
+                "created_at": "2017-12-16T01:31:19.000Z",
+                "description": "Wife, mama, educator. Fully vaccinated! Likes do not = endorsement",
+                "id": "941843147763490817",
+                "name": "An educator who truly loves books & coffee \u2615\ud83d\udcda\ud83c\udf08",
+                "public_metrics": {
+                    "followers_count": 1442,
+                    "following_count": 2184,
+                    "listed_count": 3,
+                    "tweet_count": 8503
+                },
+                "username": "littlebird375",
+                "verified": false
+            },
+            {
+                "created_at": "2012-02-29T01:46:49.000Z",
+                "description": "",
+                "id": "508214074",
+                "name": "UyghurVoice",
+                "public_metrics": {
+                    "followers_count": 54,
+                    "following_count": 197,
+                    "listed_count": 0,
+                    "tweet_count": 1977
+                },
+                "username": "UyghurV",
+                "verified": false
+            },
+            {
+                "created_at": "2013-07-22T16:39:45.000Z",
+                "description": "Health Psychologist, Population Health, Wife, Mom, Strong Woman-Lots o' RT- Amplify Mental Health Parity & Science - Reduce Stigma",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "web.uri.edu/cprc/meet/coll\u2026",
+                                "end": 23,
+                                "expanded_url": "https://web.uri.edu/cprc/meet/colleen-a-redding-ph-d/",
+                                "start": 0,
+                                "url": "https://t.co/YsGLV2SeN2"
+                            }
+                        ]
+                    }
+                },
+                "id": "1613205524",
+                "name": "CRedding, PhD",
+                "public_metrics": {
+                    "followers_count": 6095,
+                    "following_count": 6672,
+                    "listed_count": 463,
+                    "tweet_count": 70289
+                },
+                "username": "creddingvye",
+                "verified": false
+            },
+            {
+                "created_at": "2011-05-14T11:58:36.000Z",
+                "description": "I've blocked so many people here, it doesnt mean I hate u | this is my safest place | hobi : typo",
+                "id": "298487238",
+                "name": "unbothered queen",
+                "public_metrics": {
+                    "followers_count": 775,
+                    "following_count": 192,
+                    "listed_count": 0,
+                    "tweet_count": 51809
+                },
+                "username": "gimmeanidea",
+                "verified": false
+            },
+            {
+                "created_at": "2021-11-16T12:32:45.000Z",
+                "description": "Legal profession has one of the highest workplace bullying/harassment rates in Australia.",
+                "id": "1460586413548728322",
+                "name": "Lisa Hutchinson",
+                "public_metrics": {
+                    "followers_count": 24,
+                    "following_count": 45,
+                    "listed_count": 0,
+                    "tweet_count": 1364
+                },
+                "username": "hut19520246",
+                "verified": false
+            },
+            {
+                "created_at": "2014-03-30T20:24:42.000Z",
+                "description": "PDHPE teacher, ICT Integrator, Mum, sport tragic. Advocate for student centered, flexible learning & critical thinking. Task juggler. Opinions my own.",
+                "id": "2419485350",
+                "name": "Kate Miller",
+                "public_metrics": {
+                    "followers_count": 1573,
+                    "following_count": 1502,
+                    "listed_count": 89,
+                    "tweet_count": 20665
+                },
+                "username": "k_miller08",
+                "verified": false
+            },
+            {
+                "created_at": "2010-07-11T12:20:48.000Z",
+                "description": "Committed to Earth, decency, ecosystems, sustainability. Humans part of Nature. Health Coach https://t.co/GHvP6fUvAV #fasting #lowcarb",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 125,
+                                "start": 117,
+                                "tag": "fasting"
+                            },
+                            {
+                                "end": 134,
+                                "start": 126,
+                                "tag": "lowcarb"
+                            }
+                        ],
+                        "urls": [
+                            {
+                                "display_url": "thefastingmethod.as.me/larry-consult",
+                                "end": 116,
+                                "expanded_url": "https://thefastingmethod.as.me/larry-consult",
+                                "start": 93,
+                                "url": "https://t.co/GHvP6fUvAV"
+                            }
+                        ]
+                    }
+                },
+                "id": "165387035",
+                "name": "Larry Diamond",
+                "public_metrics": {
+                    "followers_count": 5724,
+                    "following_count": 3341,
+                    "listed_count": 151,
+                    "tweet_count": 54008
+                },
+                "username": "natureboyrr",
+                "verified": false
+            },
+            {
+                "created_at": "2016-08-10T10:59:39.000Z",
+                "description": "",
+                "id": "763328952429600768",
+                "name": "Linus",
+                "public_metrics": {
+                    "followers_count": 35,
+                    "following_count": 90,
+                    "listed_count": 0,
+                    "tweet_count": 2284
+                },
+                "username": "LinusLovit",
+                "verified": false
+            },
+            {
+                "created_at": "2021-07-05T02:58:49.000Z",
+                "description": "Gives zero fucks about my number of followers. Whatever makes you feel more popular. bro/bruh",
+                "id": "1411882185859104769",
+                "name": "JackJeckel64",
+                "public_metrics": {
+                    "followers_count": 31,
+                    "following_count": 22,
+                    "listed_count": 3,
+                    "tweet_count": 2203
+                },
+                "username": "JJeckel64",
+                "verified": false
+            },
+            {
+                "created_at": "2019-09-15T18:35:10.000Z",
+                "description": "",
+                "id": "1173304229034942465",
+                "name": "Decredinator",
+                "public_metrics": {
+                    "followers_count": 35,
+                    "following_count": 216,
+                    "listed_count": 1,
+                    "tweet_count": 3996
+                },
+                "username": "decredinator",
+                "verified": false
+            },
+            {
+                "created_at": "2012-07-16T03:47:22.000Z",
+                "description": "Dean&Castiel.Richie&Eddie.Jensen&Misha.She/Her.Overdramatic.Curses much.Kinda blunt.Political.Grouchy Ladybug.Serenely chaotic. #BlackLivesMatter #AbolishICE",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 145,
+                                "start": 128,
+                                "tag": "BlackLivesMatter"
+                            },
+                            {
+                                "end": 157,
+                                "start": 146,
+                                "tag": "AbolishICE"
+                            }
+                        ]
+                    }
+                },
+                "id": "636754581",
+                "name": "Liza \u2764\ufe0f\ud83d\udc1a Always \ud83d\udc99\ud83d\udc9a",
+                "public_metrics": {
+                    "followers_count": 916,
+                    "following_count": 404,
+                    "listed_count": 10,
+                    "tweet_count": 140465
+                },
+                "username": "Electrical_Star",
+                "verified": false
+            },
+            {
+                "created_at": "2018-10-30T14:21:12.000Z",
+                "description": "An itty bitty human mind \ud83e\udde0\nThe sun never sets on the streets of the world wide web \u2600\ufe0f\ud83c\udf0e",
+                "id": "1057276233870913537",
+                "name": "brain user person",
+                "public_metrics": {
+                    "followers_count": 48,
+                    "following_count": 1686,
+                    "listed_count": 0,
+                    "tweet_count": 2570
+                },
+                "username": "brainuserperson",
+                "verified": false
+            },
+            {
+                "created_at": "2012-04-09T15:51:30.000Z",
+                "description": "",
+                "id": "549330655",
+                "name": "Nyxs60",
+                "public_metrics": {
+                    "followers_count": 135,
+                    "following_count": 320,
+                    "listed_count": 0,
+                    "tweet_count": 4494
+                },
+                "username": "debpipertherapy",
+                "verified": false
+            },
+            {
+                "created_at": "2010-08-25T23:56:14.000Z",
+                "description": "Was happier when saw Gladys leaving, but then Dom showed up.\nTharawal land. \nAll tweets just my opinion.",
+                "id": "183024552",
+                "name": "Disquieted Australian - Still wearing a mask.",
+                "public_metrics": {
+                    "followers_count": 1346,
+                    "following_count": 1214,
+                    "listed_count": 4,
+                    "tweet_count": 24130
+                },
+                "username": "Strongisgentle",
+                "verified": false
+            },
+            {
+                "created_at": "2013-01-21T09:37:19.000Z",
+                "description": "Criticised by Skynews a couple of times means I must be doing something right... just a shit stirrer..Lots of humour, sorry no DMs please",
+                "id": "1108565574",
+                "name": "Politic@l Spinner",
+                "public_metrics": {
+                    "followers_count": 35266,
+                    "following_count": 1912,
+                    "listed_count": 169,
+                    "tweet_count": 171205
+                },
+                "username": "LesStonehouse",
+                "verified": false
+            },
+            {
+                "created_at": "2019-04-07T19:30:23.000Z",
+                "description": "",
+                "id": "1114973713013850113",
+                "name": "Dan Orloski",
+                "public_metrics": {
+                    "followers_count": 47,
+                    "following_count": 758,
+                    "listed_count": 0,
+                    "tweet_count": 10437
+                },
+                "username": "DanOrloski",
+                "verified": false
+            },
+            {
+                "created_at": "2017-12-09T09:47:30.000Z",
+                "description": "Proudly conservative, self-employed family man awake to the Big Pharma msm propaganda arm",
+                "id": "939431298233376768",
+                "name": "Matt",
+                "public_metrics": {
+                    "followers_count": 111,
+                    "following_count": 184,
+                    "listed_count": 1,
+                    "tweet_count": 1546
+                },
+                "username": "PCgoneCrazy",
+                "verified": false
+            },
+            {
+                "created_at": "2010-02-17T14:21:21.000Z",
+                "description": "With years as journalist, public education executive, real estate broker, blogger behind me, my latest adventure: Bangkok. (RTs not necessarily endorsements.)",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "malcolmcarter.wordpress.com",
+                                "end": 23,
+                                "expanded_url": "http://malcolmcarter.wordpress.com",
+                                "start": 0,
+                                "url": "https://t.co/fGsS8ii4Ju"
+                            }
+                        ]
+                    }
+                },
+                "id": "115068099",
+                "name": "Malcolm Carter",
+                "public_metrics": {
+                    "followers_count": 1119,
+                    "following_count": 100,
+                    "listed_count": 81,
+                    "tweet_count": 39158
+                },
+                "username": "MalcolmThailand",
+                "verified": false
+            },
+            {
+                "created_at": "2019-06-25T00:55:34.000Z",
+                "description": "Xira is a grey and white Zorua  | @wouchis \ud83d\udc9c   | pfp:@tsukaui | Zorua of All Time",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 42,
+                                "start": 34,
+                                "username": "wouchis"
+                            },
+                            {
+                                "end": 61,
+                                "start": 53,
+                                "username": "tsukaui"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "ko-fi.com/xirazoroark",
+                                "end": 23,
+                                "expanded_url": "http://ko-fi.com/xirazoroark",
+                                "start": 0,
+                                "url": "https://t.co/yiwqjevZlQ"
+                            }
+                        ]
+                    }
+                },
+                "id": "1143321802313207808",
+                "name": "Xira Zorua \ud83d\udc9c",
+                "public_metrics": {
+                    "followers_count": 1064,
+                    "following_count": 1685,
+                    "listed_count": 14,
+                    "tweet_count": 28460
+                },
+                "username": "Xira_Zorua",
+                "verified": false
+            },
+            {
+                "created_at": "2013-05-13T10:13:09.000Z",
+                "description": "Yow-oggera land \ud83d\udc89 \ud83d\udc89vegan social justice. lover of vegan wine.",
+                "id": "1425139212",
+                "name": "Matth Q",
+                "public_metrics": {
+                    "followers_count": 128,
+                    "following_count": 660,
+                    "listed_count": 0,
+                    "tweet_count": 433
+                },
+                "username": "queball12",
+                "verified": false
+            },
+            {
+                "created_at": "2011-02-24T04:47:26.000Z",
+                "description": "Queensland Premier and Minister for the Olympics",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "thepremier.qld.gov.au",
+                                "end": 23,
+                                "expanded_url": "https://www.thepremier.qld.gov.au/",
+                                "start": 0,
+                                "url": "https://t.co/zMRzXlQkLW"
+                            }
+                        ]
+                    }
+                },
+                "id": "256833444",
+                "name": "Annastacia Palaszczuk",
+                "public_metrics": {
+                    "followers_count": 209179,
+                    "following_count": 1258,
+                    "listed_count": 793,
+                    "tweet_count": 16238
+                },
+                "username": "AnnastaciaMP",
+                "verified": true
+            },
+            {
+                "created_at": "2021-12-16T03:32:07.000Z",
+                "description": "Too many questions not enough answers",
+                "id": "1471322095695155205",
+                "name": "Ay Jay",
+                "public_metrics": {
+                    "followers_count": 13,
+                    "following_count": 127,
+                    "listed_count": 0,
+                    "tweet_count": 703
+                },
+                "username": "EmancipateBrain",
+                "verified": false
+            },
+            {
+                "created_at": "2011-05-04T20:18:39.000Z",
+                "description": "",
+                "id": "293129655",
+                "name": "Cameron Way",
+                "public_metrics": {
+                    "followers_count": 6,
+                    "following_count": 100,
+                    "listed_count": 0,
+                    "tweet_count": 476
+                },
+                "username": "crway9171",
+                "verified": false
+            },
+            {
+                "created_at": "2013-11-01T05:40:14.000Z",
+                "description": "\u00a3et them eat cake",
+                "id": "2167828236",
+                "name": "Devin Nunez is a Big Fat Cry-Baby",
+                "public_metrics": {
+                    "followers_count": 355,
+                    "following_count": 657,
+                    "listed_count": 1,
+                    "tweet_count": 33423
+                },
+                "username": "sar_marantoinet",
+                "verified": false
+            },
+            {
+                "created_at": "2020-09-19T16:28:24.000Z",
+                "description": "if you want to be a good philosopher, you've got to axolotl questions.\n\nResearch Chemist and Microbiologist\n\ud83c\udde6\ud83c\uddfa\ud83c\udff3\ufe0f\u200d\ud83c\udf08",
+                "id": "1307355834314231811",
+                "name": "AskAlotl",
+                "public_metrics": {
+                    "followers_count": 50,
+                    "following_count": 169,
+                    "listed_count": 0,
+                    "tweet_count": 6494
+                },
+                "username": "CJCross91",
+                "verified": false
+            },
+            {
+                "created_at": "2015-03-14T22:27:55.000Z",
+                "description": "Don't hurt humans or animals. Let's live together & pool resources. #DisabilitiesHappen #NoViolence \n\ud83c\udf3f LonelyNoMore \ud83c\udf31  #Resist \ud83c\udf0a\n#YoureGonnaGetOldToo \u2764#Love\u2764",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 87,
+                                "start": 68,
+                                "tag": "DisabilitiesHappen"
+                            },
+                            {
+                                "end": 99,
+                                "start": 88,
+                                "tag": "NoViolence"
+                            },
+                            {
+                                "end": 126,
+                                "start": 119,
+                                "tag": "Resist"
+                            },
+                            {
+                                "end": 149,
+                                "start": 129,
+                                "tag": "YoureGonnaGetOldToo"
+                            },
+                            {
+                                "end": 156,
+                                "start": 151,
+                                "tag": "Love"
+                            }
+                        ]
+                    }
+                },
+                "id": "3082546368",
+                "name": "Rev Dr Kathleen Raphael DD LPN",
+                "public_metrics": {
+                    "followers_count": 26256,
+                    "following_count": 27445,
+                    "listed_count": 17,
+                    "tweet_count": 150193
+                },
+                "username": "drkatraphael",
+                "verified": false
+            },
+            {
+                "created_at": "2017-10-24T17:53:25.000Z",
+                "description": "",
+                "id": "922883743769018368",
+                "name": "Juss Wachin",
+                "public_metrics": {
+                    "followers_count": 54,
+                    "following_count": 1046,
+                    "listed_count": 2,
+                    "tweet_count": 484
+                },
+                "username": "Juss_wach",
+                "verified": false
+            },
+            {
+                "created_at": "2008-01-26T11:50:50.000Z",
+                "description": "Trader",
+                "id": "12716032",
+                "name": "SonaliRanade",
+                "public_metrics": {
+                    "followers_count": 80779,
+                    "following_count": 1410,
+                    "listed_count": 855,
+                    "tweet_count": 424583
+                },
+                "username": "sonaliranade",
+                "verified": false
+            },
+            {
+                "created_at": "2021-09-27T17:55:13.000Z",
+                "description": "Join @jdbalart weekdays 10am ET / 7am PT, live on @MSNBC",
+                "entities": {
+                    "description": {
+                        "mentions": [
+                            {
+                                "end": 14,
+                                "start": 5,
+                                "username": "jdbalart"
+                            },
+                            {
+                                "end": 56,
+                                "start": 50,
+                                "username": "MSNBC"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "msnbc.com/jose-diaz-bala\u2026",
+                                "end": 23,
+                                "expanded_url": "https://www.msnbc.com/jose-diaz-balart",
+                                "start": 0,
+                                "url": "https://t.co/Rh7VZF4FzB"
+                            }
+                        ]
+                    }
+                },
+                "id": "1442548149151666188",
+                "name": "Jos\u00e9 D\u00edaz-Balart Reports",
+                "public_metrics": {
+                    "followers_count": 1131,
+                    "following_count": 215,
+                    "listed_count": 15,
+                    "tweet_count": 866
+                },
+                "username": "JDBalartMSNBC",
+                "verified": true
+            },
+            {
+                "created_at": "2022-01-03T11:13:27.000Z",
+                "description": "",
+                "id": "1477961171449917441",
+                "name": "Krista Thompson",
+                "public_metrics": {
+                    "followers_count": 8,
+                    "following_count": 25,
+                    "listed_count": 0,
+                    "tweet_count": 140
+                },
+                "username": "ktruthplz",
+                "verified": false
+            },
+            {
+                "created_at": "2021-06-02T20:55:40.000Z",
+                "description": "",
+                "id": "1400194352224350211",
+                "name": "SG Grunewald",
+                "public_metrics": {
+                    "followers_count": 416,
+                    "following_count": 871,
+                    "listed_count": 0,
+                    "tweet_count": 5039
+                },
+                "username": "GrunewaldSg",
+                "verified": false
+            },
+            {
+                "created_at": "2021-03-29T06:29:43.000Z",
+                "description": "Gender-critical radical feminist.",
+                "id": "1376421247437795329",
+                "name": "wear an N95 \ud83d\udc9a\ud83e\udd0d\ud83d\udc9c",
+                "public_metrics": {
+                    "followers_count": 143,
+                    "following_count": 392,
+                    "listed_count": 0,
+                    "tweet_count": 5505
+                },
+                "username": "ArkadyArtemis",
+                "verified": false
+            },
+            {
+                "created_at": "2010-12-24T18:41:15.000Z",
+                "description": "Dallas Cowboys, Chicago Cubs, Iowa Hawkeyes, Blackhawks",
+                "id": "230244271",
+                "name": "Iam1luckydad",
+                "public_metrics": {
+                    "followers_count": 540,
+                    "following_count": 505,
+                    "listed_count": 0,
+                    "tweet_count": 13241
+                },
+                "username": "iam1luckydad",
+                "verified": false
+            },
+            {
+                "created_at": "2010-02-04T13:43:37.000Z",
+                "description": "Software Engineer, tweets in Polish & English.",
+                "id": "111309713",
+                "name": "Daniel Zbarski",
+                "public_metrics": {
+                    "followers_count": 451,
+                    "following_count": 1058,
+                    "listed_count": 14,
+                    "tweet_count": 5183
+                },
+                "username": "Pcyryl",
+                "verified": false
+            },
+            {
+                "created_at": "2008-09-17T21:01:17.000Z",
+                "description": "Researcher, explorer, world changer. #UAlberta #SSHRC Doctoral Fellow exploring the politics of childhood and education. Recovering politician. She/her.",
+                "entities": {
+                    "description": {
+                        "hashtags": [
+                            {
+                                "end": 46,
+                                "start": 37,
+                                "tag": "UAlberta"
+                            },
+                            {
+                                "end": 53,
+                                "start": 47,
+                                "tag": "SSHRC"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "bridgetstirling.ca",
+                                "end": 23,
+                                "expanded_url": "http://www.bridgetstirling.ca",
+                                "start": 0,
+                                "url": "https://t.co/AOm4lb8JiL"
+                            }
+                        ]
+                    }
+                },
+                "id": "16337088",
+                "name": "Bridget Stirling",
+                "public_metrics": {
+                    "followers_count": 7181,
+                    "following_count": 2498,
+                    "listed_count": 55,
+                    "tweet_count": 22561
+                },
+                "username": "bridgetstirling",
+                "verified": false
+            },
+            {
+                "created_at": "2016-07-31T15:30:49.000Z",
+                "description": "*mask up America* cynical, optimistic collector of idiot notions and wry outlooks; Biddan is an arcane word that means to pray or petition the Lord unceasingly.",
+                "id": "759773314986438656",
+                "name": "Elizabeth Something",
+                "public_metrics": {
+                    "followers_count": 52,
+                    "following_count": 477,
+                    "listed_count": 0,
+                    "tweet_count": 3205
+                },
+                "username": "ECSBiddan",
+                "verified": false
+            },
+            {
+                "created_at": "2008-05-11T07:07:07.000Z",
+                "description": "Family guy. From Budapest \ud83c\udded\ud83c\uddfa. Appreciator of: Unix CLI, TRP, carnivory/PKD, moka pot, girya. In EN/HU, rarely DE. Here for the news and the lulz. \ud83d\udc38",
+                "id": "14731789",
+                "name": "Emmanuel Frogstein",
+                "public_metrics": {
+                    "followers_count": 250,
+                    "following_count": 177,
+                    "listed_count": 78,
+                    "tweet_count": 3059
+                },
+                "username": "adiz2r",
+                "verified": false
+            },
+            {
+                "created_at": "2013-06-13T14:25:55.000Z",
+                "description": "\u2606Reading\n\u2606Storytelling\n\u2606Tarot\n\u2606Zen\n\u2606Miracle\n\u2606Mystery\n\u2606Mystic\n\u2606God\n\u2606Deus lux mea est",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "display_url": "myriadmirrormirage.blogspot.com",
+                                "end": 23,
+                                "expanded_url": "http://myriadmirrormirage.blogspot.com",
+                                "start": 0,
+                                "url": "https://t.co/QwHk6CT256"
+                            }
+                        ]
+                    }
+                },
+                "id": "1513548752",
+                "name": "Zen\u2606Alleluia",
+                "public_metrics": {
+                    "followers_count": 161,
+                    "following_count": 334,
+                    "listed_count": 6,
+                    "tweet_count": 90360
+                },
+                "username": "BewBebedora",
+                "verified": false
+            },
+            {
+                "created_at": "2010-06-16T04:07:31.000Z",
+                "description": "",
+                "id": "156147230",
+                "name": "Robin Grunawalt",
+                "public_metrics": {
+                    "followers_count": 559,
+                    "following_count": 4212,
+                    "listed_count": 10,
+                    "tweet_count": 161216
+                },
+                "username": "pitterpatter31",
+                "verified": false
+            },
+            {
+                "created_at": "2014-02-21T19:12:21.000Z",
+                "description": "3 terrific kids, \ud83c\udde8\ud83c\udde6vet, \ud83c\udfcd\u26f3\ufe0f\ud83e\udd18",
+                "id": "2355222696",
+                "name": "Chris",
+                "public_metrics": {
+                    "followers_count": 934,
+                    "following_count": 995,
+                    "listed_count": 2,
+                    "tweet_count": 42325
+                },
+                "username": "Chris10280A",
+                "verified": false
+            }
+        ]
+    },
+    "meta": {
+        "newest_id": "1483227631675797505",
+        "next_token": "b26v89c19zqg8o3fpe46dj3tq9bu29v7i13klo33780ot",
+        "oldest_id": "1483227467489980418",
+        "result_count": 100
+    }
+}
