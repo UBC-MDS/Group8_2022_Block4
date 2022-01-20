@@ -174,7 +174,7 @@ def get_store(
     ].apply(pd.Series)
 
     if store_csv:
-        tweets_df.to_csv("output/tweets_response.csv", index=False)
+        tweets_df.to_csv(os.path.join(store_path, "tweets_response.csv"), index=False)
 
     return tweets_df
 

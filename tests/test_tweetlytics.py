@@ -35,5 +35,11 @@ def test_get_store():
         store_csv=True,
     )
 
+    # Check if .json file is created
+    assert os.path.exists("tests/output/tweets_response.json")
+
+    # Check if .csv file is created
+    assert os.path.exists("tests/output/tweets_response.csv")
+
     # Check if the result is a pandas dataframe
     assert type(tweets_results_df) == pd.core.frame.DataFrame
