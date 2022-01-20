@@ -24,7 +24,7 @@ def test_get_store():
     """
     bearer_token = os.getenv("BEARER_TOKEN")
     today_str = datetime.now().strftime("%Y-%m-%d")
-    start_str = today_str - timedelta(days=-7)
+    start_str = (datetime.now() - timedelta(days=6)).strftime("%Y-%m-%d")
     tweets_results_df = get_store(
         bearer_token,
         keyword="vancouver",
@@ -34,3 +34,6 @@ def test_get_store():
         max_results=100,
         store_csv=True,
     )
+
+    # Check if the result is a pandas dataframe
+    assert type(tweets_results_df) == pd.core.frame.DataFrame
