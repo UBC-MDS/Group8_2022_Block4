@@ -147,10 +147,10 @@ def get_store(
         "start_time": f"{start_date}T00:00:00.000Z",
         "end_time": f"{end_date}T00:00:00.000Z",
         "max_results": f"{max_results}",
-        "expansions": "author_id,in_reply_to_user_id,geo.place_id",
-        "tweet.fields": "id,text,author_id,in_reply_to_user_id,geo,conversation_id,created_at,lang,public_metrics,referenced_tweets,reply_settings,source",
+        "expansions": "author_id,in_reply_to_user_id",
+        "tweet.fields": "id,text,author_id,in_reply_to_user_id,conversation_id,created_at,lang,public_metrics,referenced_tweets,reply_settings,source",
         "user.fields": "id,name,username,created_at,description,public_metrics,verified,entities",
-        "place.fields": "full_name,id,country,country_code,geo,name,place_type",
+        "place.fields": "full_name,id,country,country_code,name,place_type",
         "next_token": {},
     }
 

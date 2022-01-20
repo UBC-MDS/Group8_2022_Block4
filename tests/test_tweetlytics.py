@@ -43,3 +43,27 @@ def test_get_store():
 
     # Check if the result is a pandas dataframe
     assert type(tweets_results_df) == pd.core.frame.DataFrame
+
+    # Check the column names of the returned dataframe
+    assert set(tweets_results_df.columns) == set(
+        [
+            "public_metrics",
+            "source",
+            "author_id",
+            "created_at",
+            "conversation_id",
+            "lang",
+            "reply_settings",
+            "referenced_tweets",
+            "id",
+            "text",
+            "in_reply_to_user_id",
+            "retweetcount",
+            "reply_count",
+            "like_count",
+            "quote_count",
+        ]
+    )
+
+    # Check the number of returned rows in the dataframe
+    assert len(tweets_results_df) == 100
