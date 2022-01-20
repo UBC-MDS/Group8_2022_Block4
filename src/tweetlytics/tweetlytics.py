@@ -2,11 +2,12 @@
 # Jan 2022
 
 # imports
+from arrow import now
 import requests
 import os
-from pathlib import Path
 import json
 import pandas as pd
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
 load_dotenv()  # load .env files in the project folder
@@ -79,6 +80,56 @@ def get_store(
             end_date="2022-01-17")
     >>> tweets
     """
+
+    # parameter tests
+    if not isinstance(bearer_token, str):
+        raise TypeError(
+            "Invalid parameter input type: bearer_token must be entered as a string"
+        )
+    if not isinstance(keyword, str):
+        raise TypeError(
+            "Invalid parameter input type: keyword must be entered as a string"
+        )
+    if not isinstance(start_date, str):
+        raise TypeError(
+            "Invalid parameter input type: start_date must be entered as a string"
+        )
+    if not (
+        datetime.strptime(end_date, "%Y-%m-%d")
+        > datetime.strptime(start_date, "%Y-%m-%d")
+        > (datetime.now() - timedelta(days=7))
+    ) & (api_access_lvl == "essential"):
+        raise ValueError(
+            "Invalid parameter input value: api access level of essential can only search for tweets in the past 7 days"
+        )
+    if not isinstance(end_date, str):
+        raise TypeError(
+            "Invalid parameter input type: end_date must be entered as a string"
+        )
+    if not (
+        datetime.now()
+        >= datetime.strptime(end_date, "%Y-%m-%d")
+        > datetime.strptime(start_date, "%Y-%m-%d")
+    ):
+        raise ValueError(
+            "Invalid parameter input value: end date must be in the range of the start date and today"
+        )
+    if not isinstance(max_results, int):
+        raise TypeError(
+            "Invalid parameter input type: max_results must be entered as an integer"
+        )
+    if not isinstance(store_path, str):
+        raise TypeError(
+            "Invalid parameter input type: store_path must be entered as a string"
+        )
+    if not isinstance(store_csv, bool):
+        raise TypeError(
+            "Invalid parameter input type: store_csv must be entered as a boolean"
+        )
+    if not api_access_lvl in ["essential", "academic"]:
+        raise ValueError(
+            "Invalid parameter input value: api_access_lvl must be of either string essential or academic"
+        )
 
     headers = {
         "Authorization": "Bearer {}".format(bearer_token)
