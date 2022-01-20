@@ -8,6 +8,13 @@ from pathlib import Path
 import json
 import pandas as pd
 from dotenv import load_dotenv
+import numpy as np
+import pandas as pd
+from collections import Counter
+import re
+import tweepy
+from tweepy import OAuthHandler
+from textblob import TextBlob
 
 load_dotenv()  # load .env files in the project folder
 
@@ -177,6 +184,53 @@ def analytics(df, keyword):
     >>> from tweetlytics.tweetlytics import analytics
     >>> report = analytics(df,keyword)
     """
+
+def analytics(input_file, keyword):
+    
+    if not isinstance(input_file, str):
+        raise TypeError(
+            "Invalid parameter input type: input_file must be entered as a string of url"
+        )
+        
+    if not isinstance(keyword, str):
+        raise TypeError(
+            "Invalid parameter input type: keyword must be entered as a string"
+        )
+
+    result = {}
+    result["Factors"] = f"Keyword Analysis"
+
+    # df = get_store(input_file,keyword)  --------> Amir should creat this function
+    # df = clean_data(df) --------> Shiv should creat this function
+    df = pd.read_csv(input_file)  # just for test
+    result["Total Number of Likes"] = df["like_count"].sum()
+    result["Total Number of Comments"] = df["reply_count"].sum()
+    result["Total Number of Retweets"] = df["retweetcount"].sum()
+    # result["Most Used Hashtag"] = Counter(df["hashtag"]).most_common(1)
+    pol_list = []
+    for tweet in df["text"]:
+        pol_list.append(TextBlob(tweet).sentiment.polarity)
+
+    df["polarity"] = pol_list
+
+    pos = 0
+    neu = 0
+    neg = 0
+    for i in range(0, len(df)):
+        if df["polarity"][i] > 0:
+            pos += 1
+        elif df["polarity"][i] == 0:
+            neu += 1
+        else:
+            neg += 1
+        i += 1
+
+    result["Percentage of Positive Sentiment"] = round(pos / (pos + neg + neu), 2)
+    result["Percentage of Negative Sentiment"] = round(neg / (pos + neg + neu), 2)
+    result["Percentage of Nuetral Sentiment"] = round(neu / (pos + neg + neu), 2)
+    analytics_df = pd.DataFrame(result,index = ["factors"]).set_index("Factors").T
+    return analytics_df
+
 
 
 def plot_tweets(df, time_def):
