@@ -128,26 +128,72 @@ def get_store(
     return tweets_df
 
 
-def clean_tweets():
+def clean_tweets(file_path, tokenization=True, word_count=True):
     """
     Cleans the text in the tweets.
 
-    The cleaning process includes converting into lower case, removal of punctuation, hastags and hastag counts
+    The cleaning process includes converting into lower case, removal of 
+    punctuation, hastags and hastag counts
 
     Parameters:
     -----------
     file_path : string
-        file path in form of json or csv to fetch dataframe containing the tweets.
+        File path to csv file containing tweets data
+    tokenization : Boolean
+        Creates new column containing cleaned tweet word tokens when True
+        Default is True
+    word_count : Boolean
+        Creates new column containing word count of cleaned tweets
+        Default is True
 
     Returns:
     --------
-    df_tweets : dataframe
-        A pandas dataframe comprising cleaned data in additional columns
+    df : pandas dataframe
+        A dataframe comprising tweets data post cleaning
 
     Examples
     --------
-    >>> clean_tweets("tweets_df.json")
+    >>> tweet_df = clean_tweets("output/tweets_response.csv")
     """
+    
+    # Dropping irrelavant columns
+    columns=["public_metrics"]
+    df = pd.read_csv(file_path).drop(columns=columns)
+
+    # Looping through the data set 
+    for i in range(len(df)):
+        # Cleaning a retweet tag 'RT @xx:'
+        tweet_text = df.loc[i,"text"]
+        tweet_text = re.sub("RT\s@.*:\s","",tweet_text)
+
+        # Lowercasing
+        tweet_text.lower()
+
+        # Cleaning hashtags and mentions in tweet
+        tweet_text = re.sub("@[A-Za-z0-9_]+","", tweet_text)
+        tweet_text = re.sub("#[A-Za-z0-9_]+","", tweet_text)
+
+        # Cleaning links
+        tweet_text = re.sub(r"http\S+", "", tweet_text)
+        tweet_text = re.sub(r"www.\S+", "", tweet_text)
+
+        # Cleaning all punctuations and non-alpha numerics
+        tweet_text = tweet_text.strip(punctuation).replace(",", "")
+
+            
+        df.loc[i, "clean_tweets"] = tweet_text
+
+        # Tokenisation
+        if tokenization:
+            df.loc[i, "clean_tokens"] = ','.join(tweet_text.split())
+        
+        # Word count
+        if word_count:
+            df.loc[i, "word_count"] = len(tweet_text.split())
+     
+    return df
+        
+        
 
 
 def analytics(df, keyword):
