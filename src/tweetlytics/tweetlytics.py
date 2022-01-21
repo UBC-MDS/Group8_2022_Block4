@@ -181,7 +181,7 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
         raise Exception("'df' must not be empty or none type") 
     
     # Checking if 'text' column exists in dataframe
-    if "text" in df.columns.to_list:
+    if "text" in df.columns.to_list():
         raise Exception("'text' column not present in dataframe" )
         
     
