@@ -133,10 +133,12 @@ def get_store(
 
 def clean_tweets(file_path, tokenization=True, word_count=True):
     """
-    Cleans the text in the tweets.
+    Cleans the text in the tweets and returns as new columns in the dataframe.
 
-    The cleaning process includes converting into lower case, removal of 
-    punctuation, hastags and hastag counts
+    The function cleans the raw tweets text removing Reference Tweets 
+    (RTs @usernames),converts the raw tweets into lowercase, cleans the hashtags, 
+    mentions, punctuations and non-alphanumerics, and returns new columns in the
+    dataframe containing cleaned tweets, tokens and word count.
 
     Parameters:
     -----------
@@ -152,7 +154,7 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
     Returns:
     --------
     df : pandas dataframe
-        A dataframe comprising tweets data post cleaning
+        A dataframe comprising tweets data after cleaning raw text
 
     Examples
     --------
