@@ -3,6 +3,7 @@
 
 # imports
 from tweetlytics.tweetlytics import get_store
+from tweetlytics.tweetlytics import clean_tweets
 import pandas as pd
 import os
 from datetime import datetime, timedelta
