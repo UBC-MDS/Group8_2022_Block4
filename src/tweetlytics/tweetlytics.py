@@ -8,6 +8,9 @@ from pathlib import Path
 import json
 import pandas as pd
 from dotenv import load_dotenv
+import re
+from collections import Counter
+from string import punctuation
 
 load_dotenv()  # load .env files in the project folder
 
