@@ -160,25 +160,25 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
     --------
     >>> tweet_df = clean_tweets("output/tweets_response.csv")
     """
-    # Error and exception handling for valid inputs
+    # Checking for valid inputs
     if not isinstance(file_path, str):
         raise Exception("'input_file' must be of str type")
-    if not isinstance(df, pd.DataFrame):
-        raise Exception("'df' must be of DataFrame type.")
     if not isinstance(tokenization, bool):
         raise Exception("'tokenization' must be of bool type")
     if not isinstance(word_count, bool):
-        raise Exception("'word_count' must be of bool type") 
-    
+        raise Exception("'word_count' must be of bool type")
     
     # Dropping irrelavant columns
-    
     columns=["public_metrics"]
     df = pd.read_csv(file_path).drop(columns=columns)
-
+        
+    # Checking for 'df' to be a dataframe
+    if not isinstance(df, pd.DataFrame):
+        raise Exception("'df' must be of DataFrame type.")
+    
     # Looping through the data set 
     for i in range(len(df)):
-        # Cleaning a retweet tag 'RT @username:'
+        # Cleaning a retweet tag 'RT @xx:'
         tweet_text = df.loc[i,"text"]
         tweet_text = re.sub("RT\s@.*:\s","",tweet_text)
 
@@ -196,17 +196,17 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
         # Cleaning all punctuations and non-alpha numerics
         tweet_text = tweet_text.strip(punctuation).replace(",", "")
 
-            
+        # Adding clean_tweets column    
         df.loc[i, "clean_tweets"] = tweet_text
 
-        # Tokenisation
+        # Adding clean_tokens column
         if tokenization:
             df.loc[i, "clean_tokens"] = ','.join(tweet_text.split())
         
-        # Word count
+        # Adding word_count column
         if word_count:
             df.loc[i, "word_count"] = len(tweet_text.split())
-     
+         
     return df
         
         
