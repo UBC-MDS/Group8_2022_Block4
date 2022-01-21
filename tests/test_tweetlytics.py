@@ -67,3 +67,38 @@ def test_get_store():
 
     # Check the number of returned rows in the dataframe
     assert len(tweets_results_df) == 100
+
+    
+def test_clean_tweets():
+    """
+    Test various steps in clean_tweets function
+    -check if file_path exists
+    -check if ouput dataframe is a pandas dataframe
+    -check if output dataframe contains the desired columns
+    -check if clean tweets column has any of the special characters
+    3 tests will run
+    """
+    df = clean_tweets("tests/output/tweets_response.csv")
+    
+    # check if input parameter file path exists 
+    assert os.path.exists("tests/output/tweets_response.csv")
+    
+    # check if output dataframe is a pandas dataframe
+    assert type(df) == pd.core.frame.DataFrame
+    
+    # check if output dataframe contains the columns for cleaned data
+    new_cols = ["clean_tokens", "clean_tweets", "word_count"]
+    col_list = df.columns.to_list()
+    "clean_tokens" in col_list
+    assert all(elem in col_list for elem in new_cols)
+    
+    # check if clean_tweets column contains any alphanumeric character
+    tweet =  []
+    for i in range(len(df)):
+        tweet.append(df.loc[i,"clean_tweets"])
+    any(not c.isalnum() for c in tweet)
+    
+    
+    
+    
+    
