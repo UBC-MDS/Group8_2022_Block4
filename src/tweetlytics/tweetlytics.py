@@ -176,6 +176,15 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
     if not isinstance(df, pd.DataFrame):
         raise Exception("'df' must be of DataFrame type.")
     
+    # Checking for 'df' to be non-null dataframe
+    if df.empty:
+        raise Exception("'df' must not be empty or none type") 
+    
+    # Checking if 'text' column exists in dataframe
+    if "text" in df.columns.to_list:
+        raise Exception("'text' column not present in dataframe" )
+        
+    
     # Looping through the data set 
     for i in range(len(df)):
         # Cleaning a retweet tag 'RT @xx:'
