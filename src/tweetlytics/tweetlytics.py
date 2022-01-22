@@ -9,7 +9,7 @@ import json
 import pandas as pd
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
-
+import altair as alt
 import numpy as np
 from collections import Counter
 import re
@@ -257,8 +257,6 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
          
     return df
   
-  <<<<<<< test_analytics
-  
 def analytics(input_file, keyword):
     """Analysis the tweets of specific keyword in term of
     average number of retweets, the total number of
@@ -299,7 +297,6 @@ def analytics(input_file, keyword):
 
     result = {} # for storing the result from each part
     result["Factors"] = f"Keyword Analysis" #output dataset column name
-
     
     df = pd.read_csv(input_file) 
     # calculating sum of like, comment and retweets
@@ -335,5 +332,54 @@ def analytics(input_file, keyword):
     analytics_df = pd.DataFrame(result,index = ["factors"]).set_index("Factors").T
     return analytics_df
 
-        
- 
+def plot_freq(df, col_text):
+    """
+    Takes in dataframe and analyzes 
+        the hashtags to plot the most frequent ones.
+
+    Parameters:
+    -----------
+    df : A pandas dataframe 
+        consisting of the tweets
+
+    col_text: string
+        The column name of tweet text in dataframe.
+
+    Returns:
+    --------
+    hash_plot: A bar chart
+        A chart plotting analysis result of most frequent used hashtag words.
+    """
+    # Checking for valid inputs
+    if not isinstance(df, pd.DataFrame):
+        raise Exception("The argunment, df should take in a pandas dataframe")
+    if type(col_text) != str:
+        raise Exception("The argunment, col_text should take in a string")
+
+    # get hashtags from text
+    df['hash'] = df[col_text].apply(lambda x: re.findall(r'[#]\w+', x))
+
+    # counting tags
+    hash_dict = {}
+    for hashtags in df["hash"]:
+        for word in hashtags:
+            hash_dict[word] = hash_dict.get(word, 0) + 1
+
+    hash_df = pd.DataFrame(columns=['Keyword', 'Count'])
+    for key, value in hash_dict.items():
+        key_value = [[key, value]]
+        hash_df = hash_df.append(pd.DataFrame(key_value, columns=['Keyword', 'Count']),
+                                       ignore_index=True)
+
+    # frequency plot
+    hash_plot = alt.Chart(hash_df).mark_bar().encode(
+        x=alt.X('Count', title="Hashtags"),
+        y=alt.Y('Keyword', title="Count of Hashtags", sort='-x')
+    ).properties(
+        title='Top 15 Hashtag Words'
+    ).transform_window(
+        rank='rank(Count)',
+        sort=[alt.SortField('Count', order='descending')]
+    ).transform_filter((alt.datum.rank <= 15))
+
+    return hash_plot
