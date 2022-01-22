@@ -9,7 +9,13 @@ import json
 import pandas as pd
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
+
+import numpy as np
+from collections import Counter
 import re
+import tweepy
+from tweepy import OAuthHandler
+from textblob import TextBlob
 from collections import Counter
 from string import punctuation
 
@@ -193,16 +199,15 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
     word_count : Boolean
         Creates new column containing word count of cleaned tweets
         Default is True
-
-    Returns:
-    --------
-    df : pandas dataframe
-        A dataframe comprising tweets data after cleaning raw text
+        
+    df_tweets : dataframe
+        A pandas dataframe comprising cleaned data in additional columns
 
     Examples
     --------
-    >>> tweet_df = clean_tweets("output/tweets_response.csv")
+    >>> clean_tweets("tweets_df.json")
     """
+    
     # Checking for valid input parameters
     if not isinstance(file_path, str):
         raise Exception("'input_file' must be of str type")
@@ -251,5 +256,79 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
             df.loc[i, "word_count"] = len(tweet_text.split())
          
     return df
+  
+  <<<<<<< test_analytics
+  
+def analytics(input_file, keyword):
+    """Analysis the tweets of specific keyword in term of
+    average number of retweets, the total number of
+    comments, most used hashtags and the average number
+    of likes of these tweets.
+
+    Parameters
+    ----------
+    input_file : dataframe
+        pandas dataframe
+    keyword: str
+        The keyword that the original dataframe extracted
+        based on.
+
+    Returns
+    -------
+    analytics_df: dataframe
+        Dataframe object where includes average number
+        of retweets, the total number of comments, most
+        used hashtags and the average number of likes
+
+    Examples
+    --------
+    >>> from tweetlytics.tweetlytics import analytics
+    >>> report = analytics(df,keyword)
+    """
+    
+    if not isinstance(input_file, str):
+        raise TypeError(
+            "Invalid parameter input type: input_file must be entered as a string of url"
+        )
+        
+    if not isinstance(keyword, str):
+        raise TypeError(
+            "Invalid parameter input type: keyword must be entered as a string"
+        )
+
+    result = {}
+    result["Factors"] = f"Keyword Analysis"
+
+    # df = get_store(input_file,keyword)  --------> Amir should creat this function
+    # df = clean_data(df) --------> Shiv should creat this function
+    df = pd.read_csv(input_file)  # just for test
+    result["Total Number of Likes"] = df["like_count"].sum()
+    result["Total Number of Comments"] = df["reply_count"].sum()
+    result["Total Number of Retweets"] = df["retweetcount"].sum()
+    # result["Most Used Hashtag"] = Counter(df["hashtag"]).most_common(1)
+    pol_list = []
+    for tweet in df["text"]:
+        pol_list.append(TextBlob(tweet).sentiment.polarity)
+
+    df["polarity"] = pol_list
+
+    pos = 0
+    neu = 0
+    neg = 0
+    for i in range(0, len(df)):
+        if df["polarity"][i] > 0:
+            pos += 1
+        elif df["polarity"][i] == 0:
+            neu += 1
+        else:
+            neg += 1
+        i += 1
+
+    result["Percentage of Positive Sentiment"] = round(pos / (pos + neg + neu), 2)
+    result["Percentage of Negative Sentiment"] = round(neg / (pos + neg + neu), 2)
+    result["Percentage of Nuetral Sentiment"] = round(neu / (pos + neg + neu), 2)
+    analytics_df = pd.DataFrame(result,index = ["factors"]).set_index("Factors").T
+    return analytics_df
+
         
  
