@@ -286,26 +286,28 @@ def analytics(input_file, keyword):
     >>> report = analytics(df,keyword)
     """
     
+    #checking the input_file argument to be url path
     if not isinstance(input_file, str):
         raise TypeError(
             "Invalid parameter input type: input_file must be entered as a string of url"
         )
-        
+    # check keyword argument to be string
     if not isinstance(keyword, str):
         raise TypeError(
             "Invalid parameter input type: keyword must be entered as a string"
         )
 
-    result = {}
-    result["Factors"] = f"Keyword Analysis"
+    result = {} # for storing the result from each part
+    result["Factors"] = f"Keyword Analysis" #output dataset column name
 
-    # df = get_store(input_file,keyword)  --------> Amir should creat this function
-    # df = clean_data(df) --------> Shiv should creat this function
-    df = pd.read_csv(input_file)  # just for test
+    
+    df = pd.read_csv(input_file) 
+    # calculating sum of like, comment and retweets
     result["Total Number of Likes"] = df["like_count"].sum()
     result["Total Number of Comments"] = df["reply_count"].sum()
     result["Total Number of Retweets"] = df["retweetcount"].sum()
-    # result["Most Used Hashtag"] = Counter(df["hashtag"]).most_common(1)
+    
+    #determining the sentiment of the tweet
     pol_list = []
     for tweet in df["text"]:
         pol_list.append(TextBlob(tweet).sentiment.polarity)
@@ -323,10 +325,13 @@ def analytics(input_file, keyword):
         else:
             neg += 1
         i += 1
-
+        
+    #storing all results in adictionary
     result["Percentage of Positive Sentiment"] = round(pos / (pos + neg + neu), 2)
     result["Percentage of Negative Sentiment"] = round(neg / (pos + neg + neu), 2)
     result["Percentage of Nuetral Sentiment"] = round(neu / (pos + neg + neu), 2)
+    
+    #converting the dictionary to data frame
     analytics_df = pd.DataFrame(result,index = ["factors"]).set_index("Factors").T
     return analytics_df
 

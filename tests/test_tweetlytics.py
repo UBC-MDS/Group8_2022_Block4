@@ -1,5 +1,8 @@
-from tweetlytics import tweetlytics
-from tweetlytics.tweetlytics import analytics
+# Authors: Mahsa Sarafrazi, Mahmood Rahman, Shiva Shankar Jena, Amir Shojakhani
+# Jan 2022
+
+# imports
+from tweetlytics.tweetlytics import get_store, clean_tweets,analytics
 import numpy as np
 import pandas as pd
 from collections import Counter
@@ -7,43 +10,6 @@ import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
-
-def test_analytics():
-    """Test the statestical information that are extracted from tweeter 
-    on specific keyword."""
-    
-    #testing the like analysis
-    analytics_df = analytics("output/tweets_response.csv", "Omicron")
-    expected = 42
-    actual = analytics("output/tweets_response.csv","Omicron").iloc[0,0] 
-    assert actual == expected,  "number of likes is incorrect!"
-    
-    # testing the comment analysis
-    expected = 7
-    actual = analytics("output/tweets_response.csv","Omicron").iloc[1,0]  
-    assert actual == expected,  "number of comments is incorrect!"
-    
-    # testing the reweet analysis
-    expected = 256578
-    actual = analytics("output/tweets_response.csv","Omicron").iloc[2,0]  
-    assert actual == expected,  "number of retweets is incorrect!"
-    #testing the output
-    assert type(analytics_df) == pd.core.frame.DataFrame
-
-    # Check the column names of the returned dataframe
-    assert set(analytics_df.columns) == set(
-        ["Keyword Analysis"]
-    )
-
-test_analytics()
-=======
-# Authors: Mahsa Sarafrazi, Mahmood Rahman, Shiva Shankar Jena, Amir Shojakhani
-# Jan 2022
-
-# imports
-
-from tweetlytics.tweetlytics import get_store, clean_tweets
-import pandas as pd
 import os
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
@@ -153,3 +119,36 @@ def test_clean_tweets():
     for i in range(len(df)):
         tweet.append(df.loc[i,"clean_tweets"])
     any(not c.isalnum() for c in tweet)
+
+def test_analytics():
+    """Test the statestical information that are extracted from tweeter 
+    on specific keyword."""
+    
+    #testing the like analysis
+  
+    analytics_df = analytics("output/tweets_response.csv", "Omicron")
+    expected = 42
+    actual = analytics("output/tweets_response.csv","Omicron").iloc[0,0] 
+    
+    assert actual == expected,  "number of likes is incorrect!"
+    
+    # testing the comment analysis
+    expected = 7
+
+    actual = analytics("output/tweets_response.csv","Omicron").iloc[1,0]  
+    
+    assert actual == expected,  "number of comments is incorrect!"
+    
+    # testing the reweet analysis
+    expected = 256578
+
+    actual = analytics("output/tweets_response.csv","Omicron").iloc[2,0]  
+
+    assert actual == expected,  "number of retweets is incorrect!"
+    #testing the output
+    assert type(analytics_df) == pd.core.frame.DataFrame
+
+    # Check the column names of the returned dataframe
+    assert set(analytics_df.columns) == set(
+        ["Keyword Analysis"]
+    )
