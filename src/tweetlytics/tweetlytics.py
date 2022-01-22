@@ -2,11 +2,12 @@
 # Jan 2022
 
 # imports
+from arrow import now
 import requests
 import os
-from pathlib import Path
 import json
 import pandas as pd
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
 load_dotenv()  # load .env files in the project folder
@@ -80,6 +81,56 @@ def get_store(
     >>> tweets
     """
 
+    # parameter tests
+    if not isinstance(bearer_token, str):
+        raise TypeError(
+            "Invalid parameter input type: bearer_token must be entered as a string"
+        )
+    if not isinstance(keyword, str):
+        raise TypeError(
+            "Invalid parameter input type: keyword must be entered as a string"
+        )
+    if not isinstance(start_date, str):
+        raise TypeError(
+            "Invalid parameter input type: start_date must be entered as a string"
+        )
+    if not (
+        datetime.strptime(end_date, "%Y-%m-%d")
+        > datetime.strptime(start_date, "%Y-%m-%d")
+        > (datetime.now() - timedelta(days=7))
+    ) & (api_access_lvl == "essential"):
+        raise ValueError(
+            "Invalid parameter input value: api access level of essential can only search for tweets in the past 7 days"
+        )
+    if not isinstance(end_date, str):
+        raise TypeError(
+            "Invalid parameter input type: end_date must be entered as a string"
+        )
+    if not (
+        datetime.now()
+        >= datetime.strptime(end_date, "%Y-%m-%d")
+        > datetime.strptime(start_date, "%Y-%m-%d")
+    ):
+        raise ValueError(
+            "Invalid parameter input value: end date must be in the range of the start date and today"
+        )
+    if not isinstance(max_results, int):
+        raise TypeError(
+            "Invalid parameter input type: max_results must be entered as an integer"
+        )
+    if not isinstance(store_path, str):
+        raise TypeError(
+            "Invalid parameter input type: store_path must be entered as a string"
+        )
+    if not isinstance(store_csv, bool):
+        raise TypeError(
+            "Invalid parameter input type: store_csv must be entered as a boolean"
+        )
+    if not api_access_lvl in ["essential", "academic"]:
+        raise ValueError(
+            "Invalid parameter input value: api_access_lvl must be of either string essential or academic"
+        )
+
     headers = {
         "Authorization": "Bearer {}".format(bearer_token)
     }  # set authorization header for API
@@ -96,10 +147,10 @@ def get_store(
         "start_time": f"{start_date}T00:00:00.000Z",
         "end_time": f"{end_date}T00:00:00.000Z",
         "max_results": f"{max_results}",
-        "expansions": "author_id,in_reply_to_user_id,geo.place_id",
-        "tweet.fields": "id,text,author_id,in_reply_to_user_id,geo,conversation_id,created_at,lang,public_metrics,referenced_tweets,reply_settings,source",
+        "expansions": "author_id,in_reply_to_user_id",
+        "tweet.fields": "id,text,author_id,in_reply_to_user_id,conversation_id,created_at,lang,public_metrics,referenced_tweets,reply_settings,source",
         "user.fields": "id,name,username,created_at,description,public_metrics,verified,entities",
-        "place.fields": "full_name,id,country,country_code,geo,name,place_type",
+        "place.fields": "full_name,id,country,country_code,name,place_type",
         "next_token": {},
     }
 
@@ -123,7 +174,7 @@ def get_store(
     ].apply(pd.Series)
 
     if store_csv:
-        tweets_df.to_csv("output/tweets_response.csv", index=False)
+        tweets_df.to_csv(os.path.join(store_path, "tweets_response.csv"), index=False)
 
     return tweets_df
 
