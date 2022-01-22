@@ -2,22 +2,24 @@
 # Jan 2022
 
 # imports
+from arrow import now
 import requests
 import os
-from pathlib import Path
 import json
 import pandas as pd
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
+
 import numpy as np
-import pandas as pd
 from collections import Counter
 import re
 import tweepy
 from tweepy import OAuthHandler
 from textblob import TextBlob
+from collections import Counter
+from string import punctuation
 
 load_dotenv()  # load .env files in the project folder
-
 
 def get_store(
     bearer_token,
@@ -36,7 +38,6 @@ def get_store(
     on the Twitter API.
     If the user plans to access to the Twitter API they must have a personal bearer
     token and store it as an environement variable to access it.
-
     Parameters:
     -----------
     bearer_token : string
@@ -69,13 +70,11 @@ def get_store(
         The twitter API access level of the user's bearer token.
         Options are 'essential' or 'academic'.
         Default is 'essential'
-
     Returns:
     --------
     tweets_df : dataframe
         A pandas dataframe of retrieved tweets based on user's
         selected parameters. (Data will be stored as a Json file)
-
     Examples
     --------
     >>> bearer_token = os.getenv("BEARER_TOKEN")
@@ -86,6 +85,56 @@ def get_store(
             end_date="2022-01-17")
     >>> tweets
     """
+
+    # parameter tests
+    if not isinstance(bearer_token, str):
+        raise TypeError(
+            "Invalid parameter input type: bearer_token must be entered as a string"
+        )
+    if not isinstance(keyword, str):
+        raise TypeError(
+            "Invalid parameter input type: keyword must be entered as a string"
+        )
+    if not isinstance(start_date, str):
+        raise TypeError(
+            "Invalid parameter input type: start_date must be entered as a string"
+        )
+    if not (
+        datetime.strptime(end_date, "%Y-%m-%d")
+        > datetime.strptime(start_date, "%Y-%m-%d")
+        > (datetime.now() - timedelta(days=7))
+    ) & (api_access_lvl == "essential"):
+        raise ValueError(
+            "Invalid parameter input value: api access level of essential can only search for tweets in the past 7 days"
+        )
+    if not isinstance(end_date, str):
+        raise TypeError(
+            "Invalid parameter input type: end_date must be entered as a string"
+        )
+    if not (
+        datetime.now()
+        >= datetime.strptime(end_date, "%Y-%m-%d")
+        > datetime.strptime(start_date, "%Y-%m-%d")
+    ):
+        raise ValueError(
+            "Invalid parameter input value: end date must be in the range of the start date and today"
+        )
+    if not isinstance(max_results, int):
+        raise TypeError(
+            "Invalid parameter input type: max_results must be entered as an integer"
+        )
+    if not isinstance(store_path, str):
+        raise TypeError(
+            "Invalid parameter input type: store_path must be entered as a string"
+        )
+    if not isinstance(store_csv, bool):
+        raise TypeError(
+            "Invalid parameter input type: store_csv must be entered as a boolean"
+        )
+    if not api_access_lvl in ["essential", "academic"]:
+        raise ValueError(
+            "Invalid parameter input value: api_access_lvl must be of either string essential or academic"
+        )
 
     headers = {
         "Authorization": "Bearer {}".format(bearer_token)
@@ -103,10 +152,10 @@ def get_store(
         "start_time": f"{start_date}T00:00:00.000Z",
         "end_time": f"{end_date}T00:00:00.000Z",
         "max_results": f"{max_results}",
-        "expansions": "author_id,in_reply_to_user_id,geo.place_id",
-        "tweet.fields": "id,text,author_id,in_reply_to_user_id,geo,conversation_id,created_at,lang,public_metrics,referenced_tweets,reply_settings,source",
+        "expansions": "author_id,in_reply_to_user_id",
+        "tweet.fields": "id,text,author_id,in_reply_to_user_id,conversation_id,created_at,lang,public_metrics,referenced_tweets,reply_settings,source",
         "user.fields": "id,name,username,created_at,description,public_metrics,verified,entities",
-        "place.fields": "full_name,id,country,country_code,geo,name,place_type",
+        "place.fields": "full_name,id,country,country_code,name,place_type",
         "next_token": {},
     }
 
@@ -130,24 +179,27 @@ def get_store(
     ].apply(pd.Series)
 
     if store_csv:
-        tweets_df.to_csv("output/tweets_response.csv", index=False)
+        tweets_df.to_csv(os.path.join(store_path, "tweets_response.csv"), index=False)
 
     return tweets_df
 
 
-def clean_tweets():
+def clean_tweets(file_path, tokenization=True, word_count=True):
     """
-    Cleans the text in the tweets.
-
+    Cleans the text in the tweets and returns as new columns in the dataframe.
+    
     The cleaning process includes converting into lower case, removal of punctuation, hastags and hastag counts
-
     Parameters:
     -----------
     file_path : string
-        file path in form of json or csv to fetch dataframe containing the tweets.
-
-    Returns:
-    --------
+        File path to csv file containing tweets data
+    tokenization : Boolean
+        Creates new column containing cleaned tweet word tokens when True
+        Default is True
+    word_count : Boolean
+        Creates new column containing word count of cleaned tweets
+        Default is True
+        
     df_tweets : dataframe
         A pandas dataframe comprising cleaned data in additional columns
 
@@ -155,9 +207,59 @@ def clean_tweets():
     --------
     >>> clean_tweets("tweets_df.json")
     """
+    
+    # Checking for valid input parameters
+    if not isinstance(file_path, str):
+        raise Exception("'input_file' must be of str type")
+    if not isinstance(tokenization, bool):
+        raise Exception("'tokenization' must be of bool type")
+    if not isinstance(word_count, bool):
+        raise Exception("'word_count' must be of bool type")
+    
+    # Dropping irrelavant columns
+    columns=["public_metrics"]
+    df = pd.read_csv(file_path).drop(columns=columns)
+    
+    # Checking for 'df' to be a dataframe
+    if not isinstance(df, pd.DataFrame):
+        raise Exception("'df' must be of DataFrame type.")
+    
+    # Looping through the data set 
+    for i in range(len(df)):
+        # Cleaning a retweet tag 'RT @xx:'
+        tweet_text = df.loc[i,"text"]
+        tweet_text = re.sub(r"RT\s@.*:\s","",tweet_text)
 
+        # Lowercasing
+        tweet_text.lower()
 
-def analytics(df, keyword):
+        # Cleaning hashtags and mentions in tweet
+        tweet_text = re.sub(r"@[A-Za-z0-9_]+","", tweet_text)
+        tweet_text = re.sub(r"#[A-Za-z0-9_]+","", tweet_text)
+
+        # Cleaning links
+        tweet_text = re.sub(r"http\S+", "", tweet_text)
+        tweet_text = re.sub(r"www.\S+", "", tweet_text)
+
+        # Cleaning all punctuations and non-alpha numerics
+        tweet_text = tweet_text.strip(punctuation).replace(",", "")
+
+        # Adding clean_tweets column    
+        df.loc[i, "clean_tweets"] = tweet_text
+
+        # Adding clean_tokens column
+        if tokenization:
+            df.loc[i, "clean_tokens"] = ','.join(tweet_text.split())
+        
+        # Adding word_count column
+        if word_count:
+            df.loc[i, "word_count"] = len(tweet_text.split())
+         
+    return df
+  
+  <<<<<<< test_analytics
+  
+def analytics(input_file, keyword):
     """Analysis the tweets of specific keyword in term of
     average number of retweets, the total number of
     comments, most used hashtags and the average number
@@ -165,7 +267,7 @@ def analytics(df, keyword):
 
     Parameters
     ----------
-    df : dataframe
+    input_file : dataframe
         pandas dataframe
     keyword: str
         The keyword that the original dataframe extracted
@@ -173,9 +275,8 @@ def analytics(df, keyword):
 
     Returns
     -------
-    dict of str: int
-        dict-like object where keys and values are
-        related ratio or string including average number
+    analytics_df: dataframe
+        Dataframe object where includes average number
         of retweets, the total number of comments, most
         used hashtags and the average number of likes
 
@@ -184,8 +285,6 @@ def analytics(df, keyword):
     >>> from tweetlytics.tweetlytics import analytics
     >>> report = analytics(df,keyword)
     """
-
-def analytics(input_file, keyword):
     
     #checking the input_file argument to be url path
     if not isinstance(input_file, str):
@@ -236,40 +335,5 @@ def analytics(input_file, keyword):
     analytics_df = pd.DataFrame(result,index = ["factors"]).set_index("Factors").T
     return analytics_df
 
-
-
-def plot_tweets(df, time_def):
-    """
-    Plotting the number of tweets per hour, throughout 24 hours
-    Plotting hashtags in tweets, and plot the hashtag analysis.
-    Plotting user's tweets with sentimental analysis
-
-    Parameters:
-    -----------
-    df : dataframe
-        pandas dataframe
-    time_def: string
-        The column name of post time in dataframe.
-    tweet: string
-        The column name of tweet text in dataframe.
-    sentiment_df : dataframe
-        Output of tweet_sentiment_analysis,
-        dataframe that contains added columns from tweet_sentiment_analysis
-    plot_type : string
-        Optional: Type of plot to return, 3 options:'Standard', 'Stacked', and 'Separate'
-        'Standard' Returns bar plot of most common words tweeted color coded by sentiment
-        'Stacked' Returns same as 'Standard' but if words are found in other sentiments they are stacked together
-        'Separate' Returns 3 bar plots with the sentiment of 'Postive' 'Neutral', and 'Negative' separated
-    Returns:
-    --------
-    plot: chart
-        A histogram line plot plotting the counts of tweets versus hours.
-        A chart plotting analysis result of most frequent used hashtag words.
-        A bar plot of the user's tweets containing in order
-        the most common words, colour coded by the word's sentiment class.
-
-    Examples
-    --------
-    >>> from tweetlytics.tweetlytics import plot_tweets
-    >>> plot = plot_tweets(df,time_def)
-    """
+        
+ 
