@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # tweetlytics
 
 This package would retrieve tweets on a required topic and time frame, stores them, performs data cleaning, data analysis, and plotting.
@@ -33,16 +35,37 @@ Taking both the cleaned data frame from the clean() function and the returned di
 ### Note
 
 •As working with the Twitter API requires a personal ‘bearer token’ a user can create their own token and add it as a parameter to the get_store() function.
-
 •The package also include an example .Json and .csv file  based on the keyword ‘omicron’.
 
 ## Dependencies
 
-- TODO
+ • arrow
+ • requests
+ • pandas 
+ • dotenv
+ • altair 
+ • numpy
+ • collections
+ • re
+ • tweepy
+ • textblob
+ • string
 
 ## Usage
+•To use to get_store() function, users will require to obtain a bearer token for the official Twitter API V2. The bearer token can be requested on developers.twitter.com.
+•To test the package output, we have added sample files returned from the get_store() function and users can run clean_tweets(), analytics() and the plot_freq() functions.
 
-- TODO
+### Sample outputs
+• analytics()
+  
+  ![Table1](https://github.com/UBC-MDS/tweetlytics/blob/main/output/media/df1.png)
+  
+• plot_freq()
+  
+  ![Table1](https://github.com/UBC-MDS/tweetlytics/blob/main/output/media/plot1.png)
+  
+  ![Table1](https://github.com/UBC-MDS/tweetlytics/blob/main/output/media/plot2.png)
+
 
 ## Documentation
 
