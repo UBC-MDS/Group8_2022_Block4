@@ -214,3 +214,70 @@ def plot_tweets(df, time_def):
     >>> from tweetlytics.tweetlytics import plot_tweets
     >>> plot = plot_tweets(df,time_def)
     """
+
+def tweet_senti_analys(df):
+    """
+    TThis fuction categorizes the texts/tweets as positive
+    , neutral and negetive asccording to sentiment.
+
+    Parameters:
+    -----------
+    df : dataframe
+        A dataframe of the user's tweets.
+
+    Returns:
+    --------
+    senti_tweet : dataframe
+       The dataframe contains the column "sentiment"
+    """
+
+    if not isinstance(df, pd.DataFrame):
+        raise TypeError("input must be a dataframe.")
+
+    senti_tweet = df.copy()
+    senti_tweet[['polarity', 'subjectivity']] =  senti_tweet['clean_tweets'].apply(
+        lambda Text: pd.Series(TextBlob(Text).sentiment))
+
+    for index, row in senti_tweet['clean_tweets'].iteritems():
+        score = SentimentIntensityAnalyzer().polarity_scores(row)
+        neg = score['neg']
+        neu = score['neu']
+        pos = score['pos']
+        comp = score['compound']
+        if neg > pos:
+            senti_tweet.loc[index, 'sentiment'] = 'negative'
+        elif pos > neg:
+            senti_tweet.loc[index, 'sentiment'] = 'positive'
+        else:
+            senti_tweet.loc[index, 'sentiment'] = 'neutral'
+        senti_tweet.loc[index, 'neg'] = neg
+        senti_tweet.loc[index, 'neu'] = neu
+        senti_tweet.loc[index, 'pos'] = pos
+        senti_tweet.loc[index, 'compound'] = comp
+
+    return senti_tweet
+
+def cleaning_text(text):
+    """
+    This helper function will be called later in tweet_rank.
+    This helper function cleans the tweet text, including remove stopwords and stemming
+
+    Parameters:
+    -----------
+    senti_tweet : np.array
+        A np.array that contains a list of strings (tweets).
+
+    Returns:
+    --------
+    text : np.array
+        A np.array that contains a list of strings (cleaned tweets)
+    """
+    stopword = nltk.corpus.stopwords.words('english')
+    stopword.append('')
+    stopword.append('cont')
+    eng = SnowballStemmer('english')
+    lower_text = "".join([word.lower() for word in text if word not in string.punctuation])  # remove puntuation
+    num_omit = re.sub('[0-9]+', '', lower_text)
+    tokens = re.split(r'\W+', num_omit)    # tokenization
+    text = [eng.stem(word) for word in tokens if word not in stopword]  # remove stopwords and stemming
+    return text
