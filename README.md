@@ -7,7 +7,8 @@ This package would retrieve tweets on a required topic and time frame, stores th
 ## Installation
 
 ```bash
-$ pip install tweetlytics
+$ pip install --index-url https://test.pypi.org/simple/ \
+  --extra-index-url https://pypi.org/simple tweetlytics
 ```
 
 ## Features
