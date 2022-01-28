@@ -209,6 +209,8 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
     """
     
     # Checking for valid input parameters
+    
+    
     if not isinstance(file_path, str):
         raise Exception("'input_file' must be of str type")
     if not isinstance(tokenization, bool):
