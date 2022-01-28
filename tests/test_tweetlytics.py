@@ -2,7 +2,7 @@
 # Jan 2022
 
 # imports
-from tweetlytics.tweetlytics import get_store, clean_tweets,analytics
+from tweetlytics.tweetlytics import get_store, clean_tweets, analytics, plot_freq
 import numpy as np
 import pandas as pd
 from collections import Counter
@@ -154,3 +154,19 @@ def test_analytics():
     assert set(analytics_df.columns) == set(
         ["Keyword Analysis"]
     )
+    
+def test_plot_freq():
+    """
+    Tests the plot_freq function to make sure the outputs are correct.
+    Returns
+    --------
+    None
+        The test should pass and no asserts should be displayed.
+    """
+    # Calling helper function to create data
+    data = pd.read_csv("tests/for_hash_plot.csv")
+    # Test the plot attributes
+    plot = plot_freq(data, 'text')
+    assert plot.encoding.x.shorthand == 'Count', 'x_axis should be mapped to the x axis'
+    assert plot.encoding.y.shorthand == 'Keyword', 'y_axis should be mapped to the y axis'
+    assert plot.mark == 'bar', 'mark should be a bar'
