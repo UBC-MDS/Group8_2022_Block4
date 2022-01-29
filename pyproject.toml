@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tweetlytics"
-version = "0.1.0"
+version = "0.1.3"
 description = "Retrieves tweets on a required topic and timeframe using the official twitter API, stores them as a .json and .csv file, performs data cleaning, data analysis and plotting."
 authors = ["DSCI_524_2022_Group8"]
 license = "MIT"
