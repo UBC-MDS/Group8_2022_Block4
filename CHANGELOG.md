@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.3 (2022-01-29)
+
+
 ## v0.2.0 (2022-01-29)
 ### Feature
 * Add plotting functions ([`7f7586d`](https://github.com/UBC-MDS/tweetlytics/commit/7f7586d0b40d380e086d60960a0e248ced88933e))
