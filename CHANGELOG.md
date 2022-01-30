@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.4 (2022-01-30)
+### Fix
+* **ci-cd:** Change version  in toml file ([`209d39a`](https://github.com/UBC-MDS/tweetlytics/commit/209d39a639e804dc349ce67b9e55d45f377e21b5))
+
 ## v1.5.0 (2022-01-30)
 ### Feature
 * Add plotting functions ([`7f7586d`](https://github.com/UBC-MDS/tweetlytics/commit/7f7586d0b40d380e086d60960a0e248ced88933e))
