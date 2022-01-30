@@ -3,10 +3,8 @@ name: ci-cd
 on:
   push:
     branches:
-      - main
   pull_request:
     branches:
-      - main
 
 jobs:
   ci:
@@ -62,7 +60,7 @@ jobs:
     - uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
-        password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        password: {% raw %}${{ secrets.TEST_PYPI_API_TOKEN }}{% endraw %} 
         repository_url: https://test.pypi.org/legacy/
         skip_existing: true
     # Step 6. Test install from TestPyPI
@@ -76,5 +74,5 @@ jobs:
     - uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+        password: ${{ secrets.PYPI_API_TOKEN }}{% endraw %}
         skip_existing: true
