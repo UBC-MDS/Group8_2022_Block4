@@ -2,7 +2,6 @@
 # Jan 2022
 
 # imports
-from arrow import now
 import requests
 import os
 import json
@@ -11,15 +10,13 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import altair as alt
 import numpy as np
-from collections import Counter
-import re
-import tweepy
-from tweepy import OAuthHandler
 from textblob import TextBlob
-from collections import Counter
-from string import punctuation
+import ast
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
 
 load_dotenv()  # load .env files in the project folder
+
 
 def get_store(
     bearer_token,
@@ -173,10 +170,27 @@ def get_store(
 
     tweets_df = pd.DataFrame.from_dict(tweet_response_json["data"])
 
-    # expand public_metrics column and store in separate columns.
+    # expand public_metrics and referenced_tweets column and store in separate columns.
     tweets_df[["retweetcount", "reply_count", "like_count", "quote_count"]] = tweets_df[
         "public_metrics"
     ].apply(pd.Series)
+
+    tweets_df = tweets_df.explode("referenced_tweets").reset_index(drop=True)
+
+    # fill missing referenced tweets
+    tweets_df["referenced_tweets"] = tweets_df.apply(
+        lambda x: x["referenced_tweets"]
+        if isinstance(x["referenced_tweets"], dict)
+        else {"type": "original", "id": x["id"]},
+        axis=1,
+    )
+
+    tweets_df[["reference_type", "reference_id"]] = tweets_df[
+        "referenced_tweets"
+    ].apply(pd.Series)
+
+    # add searched keyword titles to dataframe
+    tweets_df["keyword"] = keyword
 
     if store_csv:
         tweets_df.to_csv(os.path.join(store_path, "tweets_response.csv"), index=False)
@@ -184,10 +198,12 @@ def get_store(
     return tweets_df
 
 
-def clean_tweets(file_path, tokenization=True, word_count=True):
+def clean_tweets(
+    file_path, tokenization=True, word_count=True, store_csv=True, store_inplace=False
+):
     """
     Cleans the text in the tweets and returns as new columns in the dataframe.
-    
+
     The cleaning process includes converting into lower case, removal of punctuation, hastags and hastag counts
     Parameters:
     -----------
@@ -199,7 +215,7 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
     word_count : Boolean
         Creates new column containing word count of cleaned tweets
         Default is True
-        
+
     df_tweets : dataframe
         A pandas dataframe comprising cleaned data in additional columns
 
@@ -207,59 +223,61 @@ def clean_tweets(file_path, tokenization=True, word_count=True):
     --------
     >>> clean_tweets("tweets_df.json")
     """
-    
+
     # Checking for valid input parameters
-    
-    
+
     if not isinstance(file_path, str):
         raise Exception("'input_file' must be of str type")
     if not isinstance(tokenization, bool):
         raise Exception("'tokenization' must be of bool type")
     if not isinstance(word_count, bool):
         raise Exception("'word_count' must be of bool type")
-    
+
     # Dropping irrelavant columns
-    columns=["public_metrics"]
+    columns = ["public_metrics"]
     df = pd.read_csv(file_path).drop(columns=columns)
-    
+
     # Checking for 'df' to be a dataframe
     if not isinstance(df, pd.DataFrame):
         raise Exception("'df' must be of DataFrame type.")
-    
-    # Looping through the data set 
-    for i in range(len(df)):
-        # Cleaning a retweet tag 'RT @xx:'
-        tweet_text = df.loc[i,"text"]
-        tweet_text = re.sub(r"RT\s@.*:\s","",tweet_text)
 
-        # Lowercasing
-        tweet_text.lower()
+    df["text"] = df["text"].str.replace(r"RT\s@.*:\s", "", regex=True)
+    df["text"] = df["text"].str.lower()
+    df["hashtags"] = df["text"].str.findall(r"#.*?(?=\s|$)")
 
-        # Cleaning hashtags and mentions in tweet
-        tweet_text = re.sub(r"@[A-Za-z0-9_]+","", tweet_text)
-        tweet_text = re.sub(r"#[A-Za-z0-9_]+","", tweet_text)
+    # Cleaning hashtags and mentions in tweet text
+    df["text"] = df["text"].str.replace(r"@[A-Za-z0-9_]+", "", regex=True)
+    df["text"] = df["text"].str.replace(r"#[A-Za-z0-9_]+", "", regex=True)
 
-        # Cleaning links
-        tweet_text = re.sub(r"http\S+", "", tweet_text)
-        tweet_text = re.sub(r"www.\S+", "", tweet_text)
+    # Cleaning links in text
+    df["text"] = df["text"].str.replace(r"http\S+", "", regex=True)
+    df["text"] = df["text"].str.replace(r"#[A-Za-z0-9_]+", "", regex=True)
 
-        # Cleaning all punctuations and non-alpha numerics
-        tweet_text = tweet_text.strip(punctuation).replace(",", "")
+    # Cleaning all punctuations
+    df["text"] = df["text"].str.replace("[^\w\s]", "", regex=True)
 
-        # Adding clean_tweets column    
-        df.loc[i, "clean_tweets"] = tweet_text
-
-        # Adding clean_tokens column
-        if tokenization:
-            df.loc[i, "clean_tokens"] = ','.join(tweet_text.split())
-        
+    # Adding clean_tokens column and remove duplicates
+    if tokenization:
+        df["tokens"] = df["text"].str.split()
         # Adding word_count column
         if word_count:
-            df.loc[i, "word_count"] = len(tweet_text.split())
-         
+            df["word_count"] = df["tokens"].str.len()
+        df["tokens"] = df["tokens"].map(lambda x: list(set(x)))
+
+    # drop if text is empty
+    df = df.query("text.str.len() > 0")
+
+    if store_csv:
+        if store_inplace:
+            df.to_csv(file_path, index=False)
+        else:
+            folder_path = file_path.split("/")[0]
+            df.to_csv(os.path.join(folder_path, "clean_tweets.csv"), index=False)
+
     return df
-  
-def analytics(input_file, keyword):
+
+
+def analytics(input_file, store_json=True, store_csvs=False):
     """Analysis the tweets of specific keyword in term of
     average number of retweets, the total number of
     comments, most used hashtags and the average number
@@ -285,103 +303,261 @@ def analytics(input_file, keyword):
     >>> from tweetlytics.tweetlytics import analytics
     >>> report = analytics(df,keyword)
     """
-    
-    #checking the input_file argument to be url path
+
+    # checking the input_file argument to be url path
     if not isinstance(input_file, str):
         raise TypeError(
             "Invalid parameter input type: input_file must be entered as a string of url"
         )
-    # check keyword argument to be string
-    if not isinstance(keyword, str):
+    if not isinstance(store_json, bool):
         raise TypeError(
-            "Invalid parameter input type: keyword must be entered as a string"
+            "Invalid parameter input type: store_json must be entered as a boolean"
+        )
+    if not isinstance(store_csvs, bool):
+        raise TypeError(
+            "Invalid parameter input type: store_csvs must be entered as a boolean"
         )
 
-    result = {} # for storing the result from each part
-    result["Factors"] = f"Keyword Analysis" #output dataset column name
-    
-    df = pd.read_csv(input_file) 
-    # calculating sum of like, comment and retweets
-    result["Total Number of Likes"] = df["like_count"].sum()
-    result["Total Number of Comments"] = df["reply_count"].sum()
-    result["Total Number of Retweets"] = df["retweetcount"].sum()
-    
-    #determining the sentiment of the tweet
-    pol_list = []
-    for tweet in df["text"]:
-        pol_list.append(TextBlob(tweet).sentiment.polarity)
+    df = pd.read_csv(input_file, converters={"tokens": ast.literal_eval})
 
-    df["polarity"] = pol_list
+    result = {}  # for storing the result from each part
 
-    pos = 0
-    neu = 0
-    neg = 0
-    for i in range(0, len(df)):
-        if df["polarity"][i] > 0:
-            pos += 1
-        elif df["polarity"][i] == 0:
-            neu += 1
-        else:
-            neg += 1
-        i += 1
-        
-    #storing all results in adictionary
-    result["Percentage of Positive Sentiment"] = round(pos / (pos + neg + neu), 2)
-    result["Percentage of Negative Sentiment"] = round(neg / (pos + neg + neu), 2)
-    result["Percentage of Nuetral Sentiment"] = round(neu / (pos + neg + neu), 2)
-    
-    #converting the dictionary to data frame
-    analytics_df = pd.DataFrame(result,index = ["factors"]).set_index("Factors").T
-    return analytics_df
+    # group by keyword and get sums
+    df_sum = df.groupby("keyword").sum()
 
-def plot_freq(df, col_text):
-    """
-    Takes in dataframe and analyzes 
-        the hashtags to plot the most frequent ones.
+    # add keyword to result
+    result["keyword"] = df_sum.index.values[0]
 
-    Parameters:
-    -----------
-    df : A pandas dataframe 
-        consisting of the tweets
+    # add sum of like, comment and retweets
+    result["total_number_of_tweets"] = len(df)
+    result["total_number_of_likes"] = df_sum["like_count"].values[0]
+    result["total_number_of_comments"] = df_sum["reply_count"].values[0]
+    result["total_number_of_retweets"] = df_sum["retweetcount"].values[0]
 
-    col_text: string
-        The column name of tweet text in dataframe.
+    # determining the sentiment of the tweet
+    df["sentiment_polarity"] = df["text"].map(lambda x: TextBlob(x).sentiment.polarity)
+    df["sentiment_type"] = df["sentiment_polarity"].map(
+        lambda x: "positive" if x > 0 else ("negative" if x < 0 else "neutral")
+    )
 
-    Returns:
-    --------
-    hash_plot: A bar chart
-        A chart plotting analysis result of most frequent used hashtag words.
-    """
-    # Checking for valid inputs
-    if not isinstance(df, pd.DataFrame):
-        raise Exception("The argunment, df should take in a pandas dataframe")
-    if type(col_text) != str:
-        raise Exception("The argunment, col_text should take in a string")
+    # adding all df to result
+    all_tweets = df.to_json(orient="records")
 
-    # get hashtags from text
-    df['hash'] = df[col_text].apply(lambda x: re.findall(r'[#]\w+', x))
+    # adding sentiment group data
+    df_sentiment_group = df.groupby("sentiment_type").agg(
+        {
+            "retweetcount": "sum",
+            "reply_count": "sum",
+            "like_count": "sum",
+            "quote_count": "sum",
+            "word_count": "sum",
+            "sentiment_polarity": "sum",
+        }
+    )
+    df_sentiment_group["tweet_count"] = df.groupby("sentiment_type").agg(
+        {"sentiment_polarity": "count"}
+    )["sentiment_polarity"]
 
-    # counting tags
-    hash_dict = {}
-    for hashtags in df["hash"]:
-        for word in hashtags:
-            hash_dict[word] = hash_dict.get(word, 0) + 1
+    df_sentiment_group.reset_index(inplace=True)
 
-    hash_df = pd.DataFrame(columns=['Keyword', 'Count'])
-    for key, value in hash_dict.items():
-        key_value = [[key, value]]
-        hash_df = hash_df.append(pd.DataFrame(key_value, columns=['Keyword', 'Count']),
-                                       ignore_index=True)
+    df_sentiment_group["tweet_group_percentage"] = (
+        df_sentiment_group["tweet_count"] / sum(df_sentiment_group["tweet_count"]) * 100
+    )
 
-    # frequency plot
-    hash_plot = alt.Chart(hash_df).mark_bar().encode(
-        x=alt.X('Count', title="Hashtags"),
-        y=alt.Y('Keyword', title="Count of Hashtags", sort='-x')
-    ).properties(
-        title='Top 15 Hashtag Words'
-    ).transform_window(
-        rank='rank(Count)',
-        sort=[alt.SortField('Count', order='descending')]
-    ).transform_filter((alt.datum.rank <= 15))
+    sentiment_group_detail_json = df_sentiment_group.to_json(orient="records")
 
-    return hash_plot
+    # adding tokens and sentiment data
+    df_tokens_sentiments = df[["tokens", "sentiment_type"]].explode("tokens")
+    df_tokens_sentiments = (
+        df_tokens_sentiments.groupby(["tokens", "sentiment_type"])
+        .size()
+        .sort_values(ascending=False)
+        .reset_index(name="count")
+    )
+
+    tokens_sentiments = df_tokens_sentiments.to_json(orient="records")
+
+    # get top tweet based on sum of likes + retweets
+    df["sum_like_retweet"] = df["like_count"] + df["retweetcount"]
+    df_top_tweets = (
+        df.sort_values("sum_like_retweet")
+        .drop_duplicates(["reference_id"])
+        .nlargest(10, "sum_like_retweet")[
+            [
+                "text",
+                "retweetcount",
+                "like_count",
+                "hashtags",
+                "sentiment_polarity",
+                "sentiment_type",
+            ]
+        ]
+    )
+
+    top_tweets_json = df_top_tweets.to_json(orient="records")
+
+    # Saving analysis as json and csvs
+    folder_path = input_file.split("/")[0]
+    if store_json:
+        with open(os.path.join(folder_path, "all_tweets.json"), "w") as file:
+            json.dump(all_tweets, file, indent=4, sort_keys=True)
+
+        with open(os.path.join(folder_path, "top_tweets.json"), "w") as file:
+            json.dump(top_tweets_json, file, indent=4, sort_keys=True)
+
+        with open(
+            os.path.join(folder_path, "sentiment_group_detail_json.json"), "w"
+        ) as file:
+            json.dump(sentiment_group_detail_json, file, indent=4, sort_keys=True)
+
+        with open(os.path.join(folder_path, "tokens_sentiments.json"), "w") as file:
+            json.dump(tokens_sentiments, file, indent=4, sort_keys=True)
+
+        with open(os.path.join(folder_path, "tweets_sums.json"), "w") as file:
+            json.dump(result, file, indent=4, sort_keys=True)
+
+    if store_csvs:
+        df.to_csv(os.path.join(folder_path, "analysis_all_tweets.csv"), index=False)
+        df_sum.to_csv(os.path.join(folder_path, "analysis_sums.csv"), index=False)
+        df_top_tweets.to_csv(
+            os.path.join(folder_path, "analysis_top_tweets.csv"), index=False
+        )
+        df_sentiment_group.to_csv(
+            os.path.join(folder_path, "analysis_sentiment_group.csv"), index=False
+        )
+        df_tokens_sentiments.to_csv(
+            os.path.join(folder_path, "analysis_tokens_sentiments.csv"), index=False
+        )
+
+    return (df, df_sum, df_top_tweets, df_sentiment_group, df_tokens_sentiments)
+
+
+def plot_tweets(
+    all_tweets_file,
+    analysis_sums_file=None,
+    analysis_top_tweets_file=None,
+    analysis_sentiment_group_file=None,
+    analysis_tokens_sentiments_file=None,
+    save_plots=True,
+):
+
+    if not isinstance(all_tweets_file, str):
+        raise TypeError(
+            "Invalid parameter input type: all_tweets_file path must be entered as a string"
+        )
+    if not isinstance(analysis_tokens_sentiments_file, str):
+        raise TypeError(
+            "Invalid parameter input type: analysis_tokens_sentiments_file path must be entered as a string"
+        )
+    if not isinstance(save_plots, bool):
+        raise TypeError(
+            "Invalid parameter input type: save_plots must be entered as a boolean"
+        )
+
+    all_tweets_df = pd.read_csv(
+        all_tweets_file, converters={"hashtags": ast.literal_eval}
+    )
+    tokens_sentiments_df = pd.read_csv(analysis_tokens_sentiments_file)
+    folder_path = all_tweets_file.split("/")[0]
+
+    # word clouds
+    stopwords = set(STOPWORDS)
+
+    # positive words
+    words_string_positive = (
+        " ".join(tokens_sentiments_df.query('sentiment_type == "positive"')["tokens"])
+        + " "
+    )
+
+    wordcloud = WordCloud(
+        width=800,
+        height=800,
+        background_color="white",
+        colormap="YlGn",
+        stopwords=stopwords,
+        min_font_size=10,
+    ).generate(words_string_positive)
+
+    plt.figure(figsize=(8, 8), facecolor=None)
+    plt.imshow(wordcloud)
+    plt.axis("off")
+    plt.tight_layout(pad=0)
+
+    # Saving positive word cloud
+    if save_plots:
+        plt.savefig(os.path.join(folder_path, "word_cloud_positive.png"))
+
+    # negative words
+    words_string_positive = (
+        " ".join(tokens_sentiments_df.query('sentiment_type == "negative"')["tokens"])
+        + " "
+    )
+
+    wordcloud = WordCloud(
+        width=800,
+        height=800,
+        background_color="white",
+        colormap="Reds",
+        stopwords=stopwords,
+        min_font_size=10,
+    ).generate(words_string_positive)
+
+    plt.figure(figsize=(8, 8), facecolor=None)
+    plt.imshow(wordcloud)
+    plt.axis("off")
+    plt.tight_layout(pad=0)
+
+    # Saving negative word cloud
+    if save_plots:
+        plt.savefig(os.path.join(folder_path, "word_cloud_negative.png"))
+
+    # plot top word distribution
+    top_words = (
+        tokens_sentiments_df.groupby("tokens")
+        .sum()
+        .reset_index()
+        .sort_values("count", ascending=False)
+    )
+    top_words = (
+        top_words.query("tokens.str.len() >= 4")
+        .nlargest(20, "count")["tokens"]
+        .to_list()
+    )
+    top_words_df = tokens_sentiments_df.query("tokens in @top_words")
+
+    top_words_plot = (
+        alt.Chart(data=top_words_df)
+        .mark_bar()
+        .encode(
+            x="count",
+            y="tokens",
+            color=alt.Color("sentiment_type", scale=alt.Scale(scheme="redyellowgreen")),
+        )
+    )
+
+    top_words_plot.save(
+        os.path.join(folder_path, "top_words_plot.png"), scale_factor=2.0
+    )
+
+    # plot hashtag counts
+    hash_tags_df = all_tweets_df["hashtags"].explode("hashtags").dropna().reset_index()
+    top_hash_tags_df = (
+        hash_tags_df.groupby("hashtags")
+        .count()
+        .sort_values("index", ascending=False)
+        .reset_index()
+        .nlargest(15, "index")
+    )
+    top_hash_tags_df.rename(columns={"index": "count"}, inplace=True)
+
+    top_hashtags_plot = (
+        alt.Chart(data=top_hash_tags_df)
+        .mark_bar()
+        .encode(alt.X("count"), alt.Y("hashtags", sort="-x"))
+    )
+
+    top_hashtags_plot.save(
+        os.path.join(folder_path, "top_hashtags_plot.png"), scale_factor=2.0
+    )
+
+    return None
