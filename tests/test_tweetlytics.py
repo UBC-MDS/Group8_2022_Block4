@@ -111,15 +111,14 @@ def test_clean_tweets():
     assert type(df) == pd.core.frame.DataFrame
     
     # check if output dataframe contains the columns for cleaned data
-    new_cols = ["clean_tokens", "clean_tweets", "word_count"]
+    new_cols = ["tokens", "word_count"]
     col_list = df.columns.to_list()
-    "clean_tokens" in col_list
     assert all(elem in col_list for elem in new_cols)
     
     # check if clean_tweets column contains any alphanumeric character
     tweet =  []
     for i in range(len(df)):
-        tweet.append(df.loc[i,"clean_tweets"])
+        tweet.append(df.loc[i,"text"])
     any(not c.isalnum() for c in tweet)
 
 def test_analytics():
