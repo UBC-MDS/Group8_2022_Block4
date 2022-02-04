@@ -69,6 +69,9 @@ def test_get_store():
                 "reply_count",
                 "like_count",
                 "quote_count",
+                "reference_type",
+                "reference_id",
+                "keyword",
             ]
         )
 
