@@ -65,7 +65,12 @@ Taking both the cleaned data frame from the clean() function and the returned di
   ![Table1](https://github.com/UBC-MDS/tweetlytics/blob/main/output/media/plot1.png)
   
   ![Table1](https://github.com/UBC-MDS/tweetlytics/blob/main/output/media/plot2.png)
+  
+### Dashboard sample images - Twitter Analytics Dashboard created with React JS and Material UI, using the output JSON files from tweetlytics. 
 
+![dashboardHero](https://github.com/UBC-MDS/tweetlytics/blob/main/output/media/dashboard-hero.png)
+ 
+![dashboard1](https://github.com/UBC-MDS/tweetlytics/blob/main/output/media/dashboard1.png)
 
 ## Documentation
 
