@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.5 (2022-02-05)
+
+
 ## v0.1.4 (2022-01-30)
 ### Fix
 * **ci-cd:** Change version  in toml file ([`209d39a`](https://github.com/UBC-MDS/tweetlytics/commit/209d39a639e804dc349ce67b9e55d45f377e21b5))
