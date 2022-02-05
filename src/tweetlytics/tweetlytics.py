@@ -9,6 +9,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import altair as alt
+import altair_saver
 import numpy as np
 from textblob import TextBlob
 import ast
