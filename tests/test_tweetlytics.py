@@ -2,7 +2,7 @@
 # Jan 2022
 
 # imports
-from tweetlytics.tweetlytics import get_store, clean_tweets, analytics, plot_freq
+from tweetlytics.tweetlytics import get_store, clean_tweets, analytics, plot_tweets
 import numpy as np
 import pandas as pd
 from textblob import TextBlob
