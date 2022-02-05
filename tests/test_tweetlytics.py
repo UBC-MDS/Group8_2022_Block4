@@ -5,10 +5,6 @@
 from tweetlytics.tweetlytics import get_store, clean_tweets, analytics, plot_freq
 import numpy as np
 import pandas as pd
-from collections import Counter
-import re
-import tweepy
-from tweepy import OAuthHandler
 from textblob import TextBlob
 import os
 from datetime import datetime, timedelta
@@ -158,18 +154,22 @@ def test_analytics():
     assert type(analytics_df[4]) == pd.core.frame.DataFrame
 
     
-def test_plot_freq():
+def test_plot_tweets():
     """
-    Tests the plot_freq function to make sure the outputs are correct.
+    Tests the plot_tweets function to make sure the outputs are correct.
     Returns
     --------
     None
         The test should pass and no asserts should be displayed.
     """
     # Calling helper function to create data
-    data = pd.read_csv("tests/for_hash_plot.csv")
+    tweet_plots = plot_tweets(
+        all_tweets_file="output/analysis_all_tweets.csv",
+        analysis_tokens_sentiments_file="output/analysis_tokens_sentiments.csv")
+    
     # Test the plot attributes
-    plot = plot_freq(data, 'text')
-    assert plot.encoding.x.shorthand == 'Count', 'x_axis should be mapped to the x axis'
-    assert plot.encoding.y.shorthand == 'Keyword', 'y_axis should be mapped to the y axis'
-    assert plot.mark == 'bar', 'mark should be a bar'
+    assert tweet_plots[2].encoding.x.field == 'count', 'count should be mapped to the x-axis'
+    assert tweet_plots[2].encoding.y.field == 'tokens', 'tokens should be mapped to the y-axis'
+    assert tweet_plots[3].encoding.y.field == 'hashtags', 'hashtags should be mapped to the x-axis'
+    assert tweet_plots[3].mark == 'bar', 'x should be mapped to the x-axis'
+    
