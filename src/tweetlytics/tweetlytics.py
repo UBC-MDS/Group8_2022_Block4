@@ -469,7 +469,7 @@ def plot_tweets(
         + " "
     )
 
-    wordcloud = WordCloud(
+    wordcloud_positive = WordCloud(
         width=800,
         height=800,
         background_color="white",
@@ -479,7 +479,7 @@ def plot_tweets(
     ).generate(words_string_positive)
 
     plt.figure(figsize=(8, 8), facecolor=None)
-    plt.imshow(wordcloud)
+    plt.imshow(wordcloud_positive)
     plt.axis("off")
     plt.tight_layout(pad=0)
 
@@ -488,22 +488,22 @@ def plot_tweets(
         plt.savefig(os.path.join(folder_path, "word_cloud_positive.png"))
 
     # negative words
-    words_string_positive = (
+    words_string_negative = (
         " ".join(tokens_sentiments_df.query('sentiment_type == "negative"')["tokens"])
         + " "
     )
 
-    wordcloud = WordCloud(
+    wordcloud_negative = WordCloud(
         width=800,
         height=800,
         background_color="white",
         colormap="Reds",
         stopwords=stopwords,
         min_font_size=10,
-    ).generate(words_string_positive)
+    ).generate(words_string_negative)
 
     plt.figure(figsize=(8, 8), facecolor=None)
-    plt.imshow(wordcloud)
+    plt.imshow(wordcloud_negative)
     plt.axis("off")
     plt.tight_layout(pad=0)
 
@@ -560,4 +560,4 @@ def plot_tweets(
         os.path.join(folder_path, "top_hashtags_plot.png"), scale_factor=2.0
     )
 
-    return None
+    return (wordcloud_positive, wordcloud_negative, top_words_plot, top_hashtags_plot)
