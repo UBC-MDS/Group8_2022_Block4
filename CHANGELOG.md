@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.7 (2022-02-05)
+### Documentation
+* Readme ([`5039ca2`](https://github.com/UBC-MDS/tweetlytics/commit/5039ca211b1b9f15e6b9f50fedf6fa35f6319818))
+
 ## v0.1.6 (2022-02-05)
 
 
