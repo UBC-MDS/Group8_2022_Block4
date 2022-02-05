@@ -127,35 +127,36 @@ def test_clean_tweets():
 def test_analytics():
     """Test the statestical information that are extracted from tweeter 
     on specific keyword."""
-    
-    #testing the like analysis
-  
-    analytics_df = analytics("output/tweets_response.csv", "Omicron")
-    expected = 42
-    actual = analytics("output/tweets_response.csv","Omicron").iloc[0,0] 
-    
-    assert actual == expected,  "number of likes is incorrect!"
-    
-    # testing the comment analysis
-    expected = 7
 
-    actual = analytics("output/tweets_response.csv","Omicron").iloc[1,0]  
-    
-    assert actual == expected,  "number of comments is incorrect!"
-    
+    # testing the all_sums daatframe
+
+    analytics_df = analytics("output/clean_tweets")
+    expected = 10
+    actual = len(pd.read_csv("output/analysis_sums.csv").columns)
+
+    assert actual == expected,  "your sum analytics is incorrect"
+
+    # testing the all-tweets dataframe
+    expected = 23
+
+    actual = analytics("output/analysis_all_tweets.csv")
+
+    assert actual == expected,  "the number of columns is incorrect!"
+
     # testing the reweet analysis
-    expected = 256578
+    expected = 8
 
-    actual = analytics("output/tweets_response.csv","Omicron").iloc[2,0]  
+    actual = analytics("output/analysis_sentiment_group.csv")
 
-    assert actual == expected,  "number of retweets is incorrect!"
-    #testing the output
-    assert type(analytics_df) == pd.core.frame.DataFrame
+    assert actual == expected,  "the number of columns in sentiment analysis is incorrect!"
 
-    # Check the column names of the returned dataframe
-    assert set(analytics_df.columns) == set(
-        ["Keyword Analysis"]
-    )
+    # testing the output
+    assert type(analytics_df[0]) == pd.core.frame.DataFrame
+    assert type(analytics_df[1]) == pd.core.frame.DataFrame
+    assert type(analytics_df[2]) == pd.core.frame.DataFrame
+    assert type(analytics_df[3]) == pd.core.frame.DataFrame
+    assert type(analytics_df[4]) == pd.core.frame.DataFrame
+
     
 def test_plot_freq():
     """
