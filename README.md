@@ -69,7 +69,7 @@ Taking both the cleaned data frame from the clean() function and the returned di
 
 ## Documentation
 
-The official documentation is hosted on Read the Docs: https:// tweetytics.readthedocs.io/en/latest/
+The official documentation is hosted on [Read the docs](https://tweetlytics.readthedocs.io/en/latest/)
 
 ## Contributing
 
