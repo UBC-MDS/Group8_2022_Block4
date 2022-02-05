@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![ci-cd](https://github.com/UBC-MDS/tweetlytics/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/tweetlytics/actions/workflows/ci-cd.yml)
 
 # tweetlytics
 
@@ -40,17 +41,16 @@ Taking both the cleaned data frame from the clean() function and the returned di
 
 ## Dependencies
 
- • arrow
  • requests
  • pandas 
  • dotenv
  • altair 
  • numpy
- • collections
- • re
- • tweepy
  • textblob
  • string
+ • matplotlib
+ • wordcloud
+
 
 ## Usage
 •To use to get_store() function, users will require to obtain a bearer token for the official Twitter API V2. The bearer token can be requested on developers.twitter.com.
